@@ -1,0 +1,273 @@
+:root {
+  --black: #0d0d0d;
+  --white: #ffffff;
+  --grey: #71717c;
+  --lightGrey: #f7f8fb;
+  --green: #1a9449;
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  color: var(--black);
+  background: var(--white);
+  max-width: 1600px;
+}
+
+div,
+span,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button {
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.25;
+  color: var(--black);
+  font-weight: 600;
+  margin: 0;
+}
+h2 {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 600;
+
+  margin: 0;
+}
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.25;
+  text-align: center;
+  font-weight: 600;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  padding: 12px 24px;
+  margin: 0;
+  text-decoration: none;
+  background: var(--green);
+  color: var(--white);
+  font-size: 1rem;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 62px;
+}
+.btn:hover {
+  color: var(--white);
+}
+
+button:hover,
+button:focus {
+  outline: 0;
+  border: 0;
+}
+
+button:focus {
+  outline: 0;
+}
+
+button:focus-visible {
+  outline: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.subhead {
+  font-size: 16px;
+  text-align: center;
+  max-width: 500px;
+  margin: 1rem auto;
+}
+.row {
+  display: flex;
+}
+.col {
+  width: 100%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+
+/* || Navbar styles*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--green);
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0;
+  gap: 32px;
+}
+
+.nav-item {
+  /* margin-left: 5rem; */
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--black);
+}
+
+.nav-link:hover {
+  color: var(--green);
+}
+
+.shopping__button {
+  display: flex;
+  gap: 8px;
+  border-radius: 62px;
+}
+
+/*Footer banner*/
+.footer__banner {
+  background-color: var(--green);
+  background-image: url(../images/footer-banner.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  padding: 10rem 0;
+  color: var(--white);
+}
+.footer__banner h2 {
+  text-align: left;
+  line-height: 1.2;
+}
+.footer__banner p {
+  line-height: 1.5;
+  font-size: 18px;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+.footer__banner .row {
+  padding: 0 5rem;
+  gap: 5rem;
+}
+
+.buy-now {
+  background-color: var(--white);
+  color: var(--green);
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.3);
+}
+.buy-now:hover {
+  color: var(--green);
+}
+
+/*Footer*/
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    position: absolute;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+    gap: 10px;
+    min-height: calc(100vh - 87px);
+    justify-content: center;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 1rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}

@@ -1,0 +1,12 @@
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M56.6963 63.3042C60.5382 63.3042 63.6528 60.1896 63.6528 56.3476C63.6528 52.5057 60.5382 49.3911 56.6963 49.3911C52.8543 49.3911 49.7397 52.5057 49.7397 56.3476C49.7397 60.1896 52.8543 63.3042 56.6963 63.3042Z" stroke="#1A9449" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M27.4809 63.3042C31.3229 63.3042 34.4375 60.1896 34.4375 56.3476C34.4375 52.5057 31.3229 49.3911 27.4809 49.3911C23.639 49.3911 20.5244 52.5057 20.5244 56.3476C20.5244 60.1896 23.639 63.3042 27.4809 63.3042Z" stroke="#1A9449" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20.6623 54.9566H8.00146C8.00146 50.5044 8.00146 46.0522 8.00146 41.6001C8.00146 36.6609 11.8276 32.6957 16.5232 32.6957C17.9493 32.6957 19.3754 32.6957 20.8015 32.6957L24.9754 21.4261C26.1928 18.1566 29.2536 16.0001 32.6971 16.0001H54.8188C58.9928 16.0001 62.5058 19.1305 63.0275 23.3044L63.6536 32.6957C68.3841 32.6957 72.0015 36.6609 72.0015 41.6001V54.9566H63.5145" stroke="#1A9449" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M49.8795 54.9565H34.2969" stroke="#1A9449" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.00146 43.826H12.1754C16.8015 43.826 20.5232 40.1043 20.5232 35.4782V32.6956" stroke="#1A9449" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M33.7746 40.3132C33.3572 39.3045 32.6615 37.1828 33.2528 34.5741C33.8789 31.7914 35.618 30.0175 36.3833 29.2523C41.6354 23.9306 51.2702 24.3132 52.5224 24.3827C52.5572 25.7393 52.4528 27.6523 51.8267 29.9132C50.992 32.7654 49.6006 37.6001 44.7311 39.861C40.2093 41.948 35.2702 40.7306 33.7746 40.3132Z" stroke="#1A9449" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M33.0439 43.8261C33.2874 42.5739 33.67 41.1479 34.4352 39.6522C37.1483 34.2261 42.3309 32 44.1744 31.3044" stroke="#1A9449" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="64" y="41.0001" width="9" height="2" rx="1" fill="#1A9449"/>
+<rect x="64" y="46.0001" width="9" height="2" rx="1" fill="#1A9449"/>
+<ellipse cx="13" cy="50.0001" rx="2" ry="2" fill="#1A9449"/>
+</svg>
