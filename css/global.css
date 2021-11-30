@@ -139,6 +139,12 @@ img {
 .col-4 {
   width: 33.33%;
 }
+.flex {
+  display: flex;
+}
+.gap-1 {
+  gap: 1rem;
+}
 
 /* || Navbar styles*/
 
@@ -203,6 +209,7 @@ img {
   display: flex;
   margin-bottom: 3rem;
   margin-bottom: 4rem;
+  gap: 20px;
 }
 .address-payment p {
   margin: 0;
@@ -224,9 +231,9 @@ img {
   flex: 1;
 }
 .payment__methods {
-  flex: 2;
   display: flex;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .footer__row--2 {
@@ -481,5 +488,53 @@ img {
   }
   .footer__banner h2 {
     text-align: center;
+  }
+
+  /*Footer*/
+  .footer {
+    padding-top: 1rem;
+  }
+
+  .office__address {
+    order: 2;
+    flex: 1.2;
+  }
+
+  .payment__methods {
+    flex-wrap: wrap;
+    gap: 12px 8%;
+  }
+  .address-payment {
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  .footer__row--2 {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
+    gap: 2rem;
+  }
+  .footer__row--2 > div:last-child {
+    margin-left: 0;
+    width: 100%;
+  }
+  .subscription__form.footer__form {
+    flex-direction: column;
+  }
+  .footer__row--end {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer__row--end .links {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .footer__row--end .links + div {
+    order: 3;
+  }
+  .footer__row--end .links span {
+    display: none;
   }
 }

@@ -594,6 +594,12 @@
     margin-top: 0;
     gap: 10px;
   }
+  .subscription .col-6:last-child {
+    border-radius: 0;
+  }
+  .subscription .col-6 {
+    border-radius: 0;
+  }
   .social-nav img {
     width: 30px;
   }
