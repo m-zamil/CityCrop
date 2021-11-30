@@ -49,7 +49,7 @@
 }
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-  background: var(--black);
+  background: var(--grey);
 }
 
 /*Custom code*/

@@ -79,8 +79,7 @@ $(document).ready(function () {
 
   $("#review-slider").owlCarousel({
     items: 3,
-
-    stagePadding: 150,
+    stagePadding: 50,
     center: true,
     loop: true,
     margin: 10,
@@ -93,7 +92,7 @@ $(document).ready(function () {
         nav: false,
       },
       768: {
-        items: 3,
+        items: 4,
         nav: true,
         loop: true,
         navText: ["<div class='nav-btn prev-slide'></div>", "<div class='nav-btn next-slide'></div>"],

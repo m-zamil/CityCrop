@@ -1,0 +1,135 @@
+.navbar {
+  padding: 1.5rem 0;
+  border-bottom: 0;
+}
+
+.hero__banner img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.contact__info {
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.contact__info .subhead {
+  margin-bottom: 2rem;
+}
+
+.location__map {
+  position: relative;
+}
+
+.location__map picture img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.location__card {
+  background-color: var(--green);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  margin-right: 15%;
+  padding: 3rem;
+  text-align: left;
+  border-radius: 20px;
+  padding-right: 5rem;
+}
+
+.location__card .info li {
+  margin-bottom: 2rem;
+}
+
+.location__card .title {
+  color: #badfc8;
+  font-size: 16px;
+  margin-bottom: 4px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.location__card .title img {
+  width: 25px;
+}
+
+.location__card .subtitle {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.location__card .social-nav {
+  gap: 0;
+  margin-top: 3rem;
+}
+.location__card .social-nav img {
+  width: 50px;
+}
+
+.query {
+  background-color: var(--lightGrey);
+  padding: 5rem 0;
+}
+
+.query h3 {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.query p {
+  max-width: 270px;
+}
+
+.query__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 450px;
+}
+
+.query__form .btn {
+  align-self: flex-start;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+@media (max-width: 768px) {
+  .contact__info {
+    padding-top: 3rem;
+  }
+  .location__card {
+    position: static;
+    margin-right: 0;
+    border-radius: 0;
+    transform: none;
+    padding-right: 3rem;
+  }
+  .query {
+    padding: 2rem 0 3rem;
+  }
+  .query h3 {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .query p {
+    font-size: 14px;
+    text-align: center;
+    max-width: 320px;
+    margin: 1rem auto;
+    margin-bottom: 4rem;
+  }
+  .query__form {
+    margin: 0 auto;
+  }
+  .query__form .btn {
+    align-self: stretch;
+  }
+  .query__form input {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-size: 14px;
+  }
+}

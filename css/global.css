@@ -153,7 +153,11 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
+  padding-top: 1.5rem;
   border-bottom: 1px solid #e7e7e7;
+}
+.nav-logo img {
+  width: 200px;
 }
 
 .hamburger {
@@ -208,7 +212,6 @@ img {
 .address-payment {
   display: flex;
   margin-bottom: 3rem;
-  margin-bottom: 4rem;
   gap: 20px;
 }
 .address-payment p {
@@ -240,7 +243,7 @@ img {
   display: flex;
   align-items: center;
   gap: 3rem;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 .footer__row--2 > div:last-child {
   margin-left: auto;
@@ -253,63 +256,67 @@ img {
   margin-right: 10px;
 }
 
-.subscription__form.footer__form {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  margin-top: 0;
-  flex: 2;
-  gap: 20px;
-}
+/*Footer Form*/
 
-.footer__form .btn {
-  line-height: 1;
+.input__wrapper {
+  position: relative;
 }
-.footer__form .form__input {
+.form__input {
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  border: 2px solid #e1e5ee;
   border: none;
   border-radius: 0.5rem;
   font-family: inherit;
   font-size: inherit;
   color: white;
   outline: none;
-  padding: 1rem;
+  padding: 1rem 2rem;
   background: none;
   background: var(--white);
   color: var(--black);
   border-radius: 62px;
   filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.05));
-  border: 1px solid rgba(13, 13, 13, 0.1);
-  padding: 0.5rem 1rem;
 }
 
-.footer__form .form__label {
+.form__label {
   position: absolute;
   left: 1rem;
-  top: 0.75rem;
-  padding: 0 0.5rem;
+  margin: 0 0.5rem;
   cursor: text;
   transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
   color: var(--black);
-  font-size: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  line-height: 1;
 }
-
-.footer__form.subscription__form .btn {
-  padding: 0.75rem 1.5rem;
-  font-size: 14px;
-}
-
-.footer__form .form__input:focus ~ .form__label,
-.footer__form .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
-  top: -0.5rem;
+.form__input:focus ~ .form__label,
+.form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+  top: 0rem;
   font-size: 0.8rem;
-  left: 0.8rem;
   color: var(--grey);
+}
+
+.footer__form {
+  display: flex;
+  gap: 20px;
+}
+
+.footer__form .form__input {
+  background: var(--white);
+  border-radius: 62px;
+  border: 1px solid rgba(13, 13, 13, 0.1);
+  filter: none;
+  padding: 0.75rem 1rem;
+  min-width: 300px;
+}
+.footer__form .form__label {
+  background-color: #fff;
+}
+
+.footer__form .btn {
+  font-size: 16px;
 }
 
 .footer__row--end {
@@ -351,7 +358,7 @@ img {
   font-size: 18px;
   margin-bottom: 2rem;
   margin-top: 0;
-  min-width: 275px;
+  max-width: 275px;
 }
 .footer__banner .row {
   padding: 0 5rem;
@@ -526,6 +533,7 @@ img {
     flex-wrap: wrap;
     gap: 2rem;
     margin-bottom: 3rem;
+    justify-content: center;
   }
   .footer__row--2 {
     flex-wrap: wrap;
@@ -537,7 +545,7 @@ img {
     margin-left: 0;
     width: 100%;
   }
-  .subscription__form.footer__form {
+  .footer__form {
     flex-direction: column;
   }
   .footer__row--end {

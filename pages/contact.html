@@ -12,6 +12,7 @@
 
     <!-- Stylesheets-->
     <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
   </head>
   <body>
     <header class="header">
@@ -53,8 +54,89 @@
       </div>
     </header>
     <main>
-      <section class="hero">
-        <div class="container"></div>
+      <section class="hero__banner">
+        <picture>
+          <source media="(max-width:768px)" srcset="../images/contact-banner-1.jpg" />
+          <source media="(min-width:768px)" srcset="../images/contact-banner.jpg" />
+          <img src="../images/contact-banner.jpg" alt="" />
+        </picture>
+      </section>
+      <section class="contact__info">
+        <div class="container">
+          <h2>Contact</h2>
+          <p class="subhead">We are passionate about our products and our talented team is motivated to develop long-term and mutually beneficial relationships with our clients.</p>
+        </div>
+        <div class="location__map">
+          <picture>
+            <source media="(max-width:768px)" srcset="../images/location-map-1.jpg" />
+            <source media="(min-width:768px)" srcset="../images/location-map-bg.jpg" />
+            <img src="../images/location-map-bg.jpg" alt="" />
+          </picture>
+          <div class="location__card">
+            <ul class="info">
+              <li>
+                <span class="title"><img src="../images/call-calling.svg" alt="" />Phone </span>
+                <a href="tel:+30 698 512 7667" class="subtitle">+30 698 512 7667​</a>
+              </li>
+              <li>
+                <span class="title"><img src="../images/location.svg" alt="" />Office </span>
+                <a href="" class="subtitle"
+                  >Greece, Egg, 190 Syngrou <br />
+                  Avenue, 176 71, Athens​</a
+                >
+              </li>
+              <li>
+                <span class="title"><img src="../images/email.svg" alt="" />E-mail </span>
+                <a href="mailto:Info@citycrop.io" class="subtitle">Info@citycrop.io​</a>
+              </li>
+            </ul>
+            <ul class="social-nav">
+              <li>
+                <a href="#"><img src="../images/fb-w.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="../images/twitter-f.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="../images/youtube-f.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="../images/linkedin-w.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="../images/instagram-w.svg" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="query">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h3>Any queries?</h3>
+              <p>If you have a query, remark, or question however large or small, please get in touch.</p>
+            </div>
+            <div class="col-6">
+              <form action="" class="query__form">
+                <div class="input__wrapper">
+                  <input name="Name" type="text" id="name" class="form__input" autocomplete="off" placeholder=" " />
+                  <label for="name" class="form__label">Name</label>
+                </div>
+                <div class="input__wrapper">
+                  <input name="Email" type="email" id="email" class="form__input" autocomplete="off" placeholder=" " />
+                  <label for="email" class="form__label">Email address</label>
+                </div>
+                <div class="input__wrapper">
+                  <input name="Message" type="text" id="message" class="form__input" autocomplete="off" placeholder=" " />
+                  <label for="message" class="form__label">Message</label>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="footer__banner">
@@ -70,43 +152,6 @@
               <p>Explore our wide variety of over 60 different fresh produce at home, indoors.</p>
               <a href="#" class="btn buy-now">Buy right now</a>
             </div>
-          </div>
-        </div>
-      </section>
-      <section class="subscription">
-        <div class="row">
-          <div class="col-6">
-            <h2>Subscription</h2>
-            <p class="subhead">Get update on sales specials and more</p>
-            <div>
-              <div class="subscription__form">
-                <input type="text" id="email" class="form__input" autocomplete="off" placeholder=" " />
-                <label for="email" class="form__label">Email address</label>
-                <br />
-                <button type="submit" class="btn">Submit</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-6">
-            <h2>Follow us</h2>
-            <p class="subhead">We want hear from you</p>
-            <ul class="social-nav">
-              <li>
-                <a href="#" target="_blank" title="Facebook" rel="nofollow"><img src="../images/facebook.svg" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" target="_blank" title="Twitter" rel="nofollow"><img src="../images/twitter.svg" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" target="_blank" title="Youtube" rel="nofollow"><img src="../images/youtube.svg" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" target="_blank" title="Linkedin" rel="nofollow"><img src="../images/linkedin.svg" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" target="_blank" title="Instagram" rel="nofollow"><img src="../images/instagram.svg" alt="" /></a>
-              </li>
-            </ul>
           </div>
         </div>
       </section>
@@ -144,9 +189,12 @@
           </div>
           <div><img src="../images/cont.jpg" alt="" /></div>
           <div>
-            <form class="subscription__form footer__form">
-              <input type="text" id="f-email" class="form__input" autocomplete="off" placeholder=" " />
-              <label for="f-email" class="form__label">Email address</label>
+            <form class="footer__form">
+              <div class="input__wrapper">
+                <input name="Email" type="email" id="f-email" class="form__input" autocomplete="off" placeholder=" " />
+                <label for="f-email" class="form__label">Email address</label>
+              </div>
+
               <button type="submit" class="btn">Subscribe</button>
             </form>
           </div>
