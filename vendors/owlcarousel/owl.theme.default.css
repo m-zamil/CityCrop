@@ -143,3 +143,12 @@
 .owl-nav-filter {
   filter: sepia(1) brightness(3.5);
 }
+
+@media (max-width: 768px) {
+  #grow-slider.owl-carousel .prev-slide {
+    left: -8px;
+  }
+  #grow-slider.owl-carousel .next-slide {
+    right: -8px;
+  }
+}
