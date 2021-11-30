@@ -103,7 +103,6 @@ $(document).ready(function () {
 
   $(".owl-carousel").owlCarousel({
     items: 1,
-
     loop: false,
     responsive: {
       0: {
@@ -111,6 +110,7 @@ $(document).ready(function () {
         stagePadding: 20,
       },
       768: {
+        nav: true,
         navText: ["<div class='nav-btn prev-slide'></div>", "<div class='nav-btn next-slide'></div>"],
         stagePadding: 0,
       },

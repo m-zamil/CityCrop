@@ -333,13 +333,6 @@ img {
   width: 25px;
 }
 
-/* .footer__row--end .links a:not(:last-child) {
-  margin-right: 5px;
-}
-.footer__row--end .links a:not(:first-child) {
-  margin-left: 5px;
-} */
-
 /*Footer banner*/
 .footer__banner {
   background-color: var(--green);
@@ -374,6 +367,27 @@ img {
   color: var(--green);
 }
 
+/*Social Nav*/
+.social-nav {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+.social-nav li {
+  list-style: none;
+}
+.social-nav a {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  line-height: 1;
+}
+.social-nav img {
+  width: 40px;
+}
+
 /*Footer*/
 
 @media (max-width: 768px) {
@@ -389,6 +403,10 @@ img {
   }
   .btn {
     font-size: 0.75rem;
+  }
+
+  .row {
+    flex-wrap: wrap;
   }
 
   .col-6 {
