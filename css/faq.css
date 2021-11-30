@@ -1,0 +1,67 @@
+.navbar {
+  padding: 1.5rem 0;
+  border-bottom: 0;
+}
+.hero__banner img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.faq__section {
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.faq__section .subhead {
+  margin-bottom: 2rem;
+}
+
+.query {
+  background-color: var(--lightGrey);
+  padding: 7rem 0;
+}
+
+.query h2 {
+  margin-bottom: 3rem;
+}
+
+.query__form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.query__form div:first-child {
+  display: flex;
+  gap: 2rem;
+}
+
+.query__form div:first-child > div {
+  flex: 1;
+}
+
+.query__form .btn {
+  align-self: center;
+  padding: 1rem 5rem;
+}
+
+@media (max-width: 768px) {
+  .query {
+    padding: 2rem 0 3rem;
+  }
+
+  .query__form {
+    margin: 0 auto;
+  }
+  .query__form .btn {
+    align-self: stretch;
+  }
+  .query__form input {
+    font-size: 14px;
+  }
+  .query__form div:first-child {
+    flex-direction: column;
+  }
+}
