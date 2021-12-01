@@ -1,0 +1,89 @@
+.heading {
+  padding: 2rem 0 1rem;
+}
+.box__card {
+  border: 1px solid rgba(13, 13, 13, 0.1);
+  border-radius: 10px;
+  padding: 2rem 4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.box__card .btn {
+  font-size: 14px;
+}
+.box__card p {
+  margin: 0;
+}
+.box__card .company__name {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+}
+.box__card .product__name {
+  font-size: 24px;
+  font-weight: 600;
+}
+.box__card .product__price {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0.75rem;
+}
+
+/*Choose your seeds*/
+.seeds {
+  background-color: var(--lightGrey);
+}
+
+@media (min-width: 768px) {
+  .order-2 {
+    order: 2;
+  }
+  .p-2 {
+    padding-bottom: 2rem;
+  }
+  .heading {
+    padding: 4rem 0 0;
+  }
+  .box__card {
+    text-align: left;
+    display: flex;
+    gap: 3rem;
+    height: 262px;
+    background-color: var(--lightGrey);
+    border: 0;
+    justify-content: center;
+    gap: 8rem;
+    margin: 10rem 0;
+    padding: 0;
+    margin-bottom: 3rem;
+  }
+  .box__card .product__info {
+    align-self: flex-end;
+    padding: 4rem 0;
+  }
+  .box__card .product__info > div {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .box__card .product__info p {
+    margin: 0;
+  }
+  .box__card .product__image {
+    align-self: flex-end;
+  }
+  .box__card .company__name {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .box__card p.product__name {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+  }
+  .box__card .product__price {
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    display: inline-block;
+  }
+}
