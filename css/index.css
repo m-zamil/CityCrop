@@ -178,6 +178,9 @@
 .advantages__img {
   width: 50%;
 }
+.advantages__img img {
+  height: 100%;
+}
 
 .advantages__content {
   width: 50%;

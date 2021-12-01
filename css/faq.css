@@ -9,10 +9,10 @@
 
 .faq__section {
   text-align: center;
-  padding-top: 5rem;
+  padding: 5rem 0;
 }
 
-.faq__section .subhead {
+.faq__section .container > h2 {
   margin-bottom: 2rem;
 }
 
@@ -47,6 +47,138 @@
   padding: 1rem 5rem;
 }
 
+/*FAQ Section*/
+
+.faq__wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+.tab {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  margin-bottom: 2rem;
+}
+.tab a {
+  flex: 1;
+}
+
+.tab .tablink {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: #8e8e93;
+  flex: 1;
+  font-weight: 500;
+  border-bottom: 4px solid #e5e5ea;
+  text-align: center;
+}
+
+.tab .tablink.active {
+  color: #000000;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+.slider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #1a9449;
+  transform-origin: 0 0;
+  transition: transform 0.25s;
+}
+
+.tab .tablink:first-child.active ~ .slider {
+  transform: translateX(0) scaleX(0.333);
+}
+
+.tab .tablink:nth-child(2).active ~ .slider {
+  transform: translateX(33.333%) scaleX(0.333);
+}
+
+.tab .tablink:nth-child(3).active ~ .slider {
+  transform: translateX(calc(33.333% * 2)) scaleX(0.333);
+}
+
+.tabcontent {
+  animation: fadeEffect 0.5s;
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*Accordion*/
+.accordion {
+  color: var(--black);
+  background-color: transparent;
+  cursor: pointer;
+  padding: 18px;
+  padding-right: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  transition: 0.4s;
+  font-weight: 600;
+  position: relative;
+}
+
+.accordion.active,
+.accordion:hover {
+  color: var(--green);
+}
+
+.accordion:after {
+  content: "\002B";
+  content: url("../images/arrowhead-down.svg");
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  position: absolute;
+  right: 0;
+  top: 1.1rem;
+}
+
+.accordion.active:after {
+  content: "\2212";
+  content: url("../images/arrowhead-up.svg");
+  position: absolute;
+  right: 0;
+  top: 1.1rem;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.panel p {
+  font-size: 14px;
+  margin: 0;
+  margin-right: 15px;
+}
+
 @media (max-width: 768px) {
   .query {
     padding: 2rem 0 3rem;
@@ -63,5 +195,18 @@
   }
   .query__form div:first-child {
     flex-direction: column;
+  }
+  .faq__section {
+    padding: 3rem 0;
+  }
+  .tab .tablink {
+    padding: 1rem 0;
+  }
+  .accordion {
+    padding: 18px 0;
+    padding-right: 18px;
+  }
+  .panel {
+    padding: 0;
   }
 }
