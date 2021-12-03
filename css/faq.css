@@ -1,6 +1,11 @@
 .navbar {
   border-bottom: 0;
 }
+
+.hero__banner {
+  min-width: 400px;
+}
+
 .hero__banner img {
   max-width: 100%;
   width: 100%;
@@ -180,6 +185,9 @@
 }
 
 @media (max-width: 768px) {
+  .hero__banner {
+    min-width: auto;
+  }
   .query {
     padding: 2rem 0 3rem;
   }
