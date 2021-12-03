@@ -1,3 +1,23 @@
+.counter {
+  background-color: #ff7478;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  left: 65%;
+  bottom: 50%;
+}
+.cart {
+  position: relative;
+}
+
+.shopping__button {
+  padding: 1rem 2.5rem;
+}
+
 .heading {
   padding: 2rem 0 1rem;
 }
@@ -23,15 +43,125 @@
   font-size: 24px;
   font-weight: 600;
 }
+
 .box__card .product__price {
   font-weight: 600;
   font-size: 24px;
   margin: 0.75rem;
 }
 
+.box__card .product__image img {
+  max-width: 100%;
+}
+
 /*Choose your seeds*/
 .seeds {
   background-color: var(--lightGrey);
+  padding-bottom: 2rem;
+}
+.seeds h2 {
+  padding: 3rem 0 2rem;
+}
+.seed__card {
+  position: relative;
+  border-radius: 12px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 1.5rem;
+}
+
+.seed__card--info {
+  background-color: rgba(13, 13, 13, 0.6);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  padding: 3rem;
+}
+
+.seed__card.card-1 {
+  background-image: url("../images/leafy-greens.jpg");
+}
+
+.seed__card.card-2 {
+  background-image: url("../images/microgreens.jpg");
+}
+.seed__card.card-3 {
+  background-image: url("../images/lettuces.jpg");
+}
+.seed__card.card-4 {
+  background-image: url("../images/herbs.jpg");
+}
+.seed__card.card-5 {
+  background-image: url("../images/exotic.jpg");
+}
+
+.seed__card--info p {
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 12px 0;
+  margin-top: 0;
+}
+
+.seed__card--image {
+  position: relative;
+}
+
+/*Neutrients*/
+
+.neutrients {
+  padding-bottom: 2rem;
+}
+.neutrients h2 {
+  padding: 3rem 0 2rem;
+}
+
+.neutrient__card {
+  border: 1px solid rgba(13, 13, 13, 0.1);
+  border-radius: 10px;
+  padding: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  max-width: 250px;
+  padding: 1rem 1rem 2.5rem;
+  margin-bottom: 0;
+}
+.owl-carousel .owl-stage {
+  padding-left: 0 !important;
+}
+#card-neutrients .item {
+  flex: auto;
+}
+.neutrient__card img {
+  width: auto !important;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+
+.neutrient__card p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.5;
+}
+.neutrient__card .btn {
+  margin-top: 1rem;
+}
+.neutrient__card p.product__name {
+  margin-bottom: 1rem;
+}
+
+.footer {
+  background-color: var(--lightGrey);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 2rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -40,6 +170,9 @@
   }
   .p-2 {
     padding-bottom: 2rem;
+  }
+  .devices {
+    padding-bottom: 7rem;
   }
   .heading {
     padding: 4rem 0 0;
@@ -72,6 +205,7 @@
   .box__card .product__image {
     align-self: flex-end;
   }
+
   .box__card .company__name {
     font-size: 1.5rem;
     font-weight: 600;
@@ -83,7 +217,50 @@
   .box__card .product__price {
     font-size: 1.5rem;
     font-weight: 600;
-
     display: inline-block;
+  }
+
+  .seeds h2 {
+    padding: 5rem 0 3rem;
+  }
+  .seed__card--info p {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  .seed__card.card-1 {
+    background-image: url("../images/leafy-greens-d.jpg");
+  }
+
+  .seed__card.card-2 {
+    background-image: url("../images/microgreens-d.jpg");
+  }
+  .seed__card > div {
+    padding: 3rem 5rem;
+  }
+
+  .seed__row-1 {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .seed__row-1 > div {
+    flex: auto;
+  }
+  .seed__row-2 {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .seed__row-2 > div {
+    flex: auto;
+  }
+  .neutrients {
+    padding-bottom: 5rem;
+  }
+  #card-neutrients {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .neutrients h2 {
+    padding: 5rem 0 3rem;
   }
 }

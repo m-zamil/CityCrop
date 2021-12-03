@@ -564,6 +564,10 @@ img {
   .footer__row--end .links + div {
     order: 3;
   }
+  .footer__row--end p {
+    margin-top: 0;
+  }
+
   .footer__row--end .links span {
     display: none;
   }

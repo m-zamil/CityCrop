@@ -13,35 +13,39 @@
     <!-- Stylesheets-->
     <link rel="stylesheet" href="../css/global.css" />
     <link rel="stylesheet" href="../css/shop.css" />
+
+    <!-- Slider styles -->
+    <link rel="stylesheet" href="../vendors/owlcarousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../vendors/owlcarousel/owl.theme.default.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
         <nav class="navbar">
-          <a href="#" class="nav-logo"><img src="../images/logo.svg" alt="City Crop logo" /></a>
+          <a href="/" class="nav-logo"><img src="../images/logo.svg" alt="City Crop logo" /></a>
           <ul class="nav-menu">
             <li class="nav-item">
-              <a href="#" class="nav-link">Home</a>
+              <a href="/" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">How it works</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">FAQ</a>
+              <a href="./faq.html" class="nav-link">FAQ</a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">Plant Showroom</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link active">About us</a>
+              <a href="./about.html" class="nav-link active">About us</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Contact</a>
+              <a href="./contact.html" class="nav-link">Contact</a>
             </li>
           </ul>
           <a href="#" class="btn shopping__button">
-            <span><img src="../images/cart.svg" alt="" /></span>
-            <span>Shop</span>
+            <span class="cart"><img src="../images/cart.svg" alt="" /><span class="counter">2</span></span>
+            <!-- <span>Shop</span> -->
           </a>
           <a href="#" class="shop-btn--mobile"><img src="../images/buy.svg" alt="" /></a>
           <a href="#"></a>
@@ -54,11 +58,11 @@
       </div>
     </header>
     <main>
-      <section>
+      <section class="devices">
         <div class="container">
           <h2 class="heading">Choose your box</h2>
           <div class="box__card__wrapper">
-            <div class="box__card">
+            <div class="box__card product__card">
               <div class="product__image p-2">
                 <picture>
                   <source media="(min-width:768px)" srcset="../images/box-1-d.png" />
@@ -75,7 +79,7 @@
               </div>
             </div>
             <br />
-            <div class="box__card">
+            <div class="box__card product__card">
               <div class="product__image order-2">
                 <picture>
                   <source media="(min-width:768px)" srcset="../images/box-2-d.png" />
@@ -92,7 +96,7 @@
               </div>
             </div>
             <br />
-            <div class="box__card">
+            <div class="box__card product__card">
               <div class="product__image p-2">
                 <picture>
                   <source media="(min-width:768px)" srcset="../images/new-device-d.png" />
@@ -114,6 +118,123 @@
       <section class="seeds">
         <div class="container">
           <h2>Choose your seeds</h2>
+          <div class="seed__card__wrapper">
+            <div class="seed__row-1">
+              <div class="seed__card card-1">
+                <div class="seed__card--info">
+                  <p>Leafy Greens</p>
+                  <button class="btn">Buy now</button>
+                </div>
+              </div>
+              <div class="seed__card card-2">
+                <div class="seed__card--info">
+                  <p>Microgreens</p>
+                  <button class="btn">Buy now</button>
+                </div>
+              </div>
+            </div>
+            <div class="seed__row-2">
+              <div class="seed__card card-3">
+                <div class="seed__card--info">
+                  <p>Lettuces</p>
+                  <button class="btn">Buy now</button>
+                </div>
+              </div>
+              <div class="seed__card card-4">
+                <div class="seed__card--info">
+                  <p>Herbs</p>
+                  <button class="btn">Buy now</button>
+                </div>
+              </div>
+              <div class="seed__card card-5">
+                <div class="seed__card--info">
+                  <p>Exotic</p>
+                  <button class="btn">Buy now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="neutrients">
+        <div class="container">
+          <h2>Choose Nutrient, Kits & Accessories</h2>
+          <div class="owl-carousel" id="card-neutrients">
+            <div class="item">
+              <div class="neutrient__card">
+                <img src="../images/cc01.png" alt="" />
+                <p class="">CC01</p>
+                <p class="product__name">Micro Nutrient</p>
+                <p class="">€9,99</p>
+                <button class="btn">Add to cart</button>
+              </div>
+            </div>
+            <div class="item">
+              <div class="neutrient__card">
+                <img src="../images/cc02.png" alt="" />
+                <p class="">CC02</p>
+                <p class="product__name">Micro Nutrient</p>
+                <p class="">€9,99</p>
+                <button class="btn">Add to cart</button>
+              </div>
+            </div>
+            <div class="item">
+              <div class="neutrient__card">
+                <img src="../images/cc03.png" alt="" />
+                <p class="">CC03</p>
+                <p class="product__name">Micro Nutrient</p>
+                <p class="">€9,99</p>
+                <button class="btn">Add to cart</button>
+              </div>
+            </div>
+            <div class="item">
+              <div class="neutrient__card">
+                <img src="../images/cc01.png" alt="" />
+                <p class="">CC01</p>
+                <p class="product__name">Micro Nutrient</p>
+                <p class="">€9,99</p>
+                <button class="btn">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="neutrient__card">
+                <img src="../images/cc01.png" alt="" />
+                <p class="">CC01</p>
+                <p class="product__name">Micro Nutrient</p>
+                <p class="">€9,99</p>
+                <button class="btn">Add to cart</button>
+              </div>
+            </div>
+            <div class="item">
+              <div class="neutrient__card">
+                <img src="../images/carbon-filter.png" alt="" />
+                <p class="">Carbon</p>
+                <p class="product__name">Filter</p>
+                <p class="">€9,99</p>
+                <button class="btn">Add to cart</button>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="neutrient__card">
+                <img src="../images/neutrient-kit.png" alt="" />
+                <p class="">CityCrop</p>
+                <p class="product__name">Nutrient Kit</p>
+                <p class="">€39,99</p>
+                <button class="btn">Add to cart</button>
+              </div>
+            </div>
+            <div class="item">
+              <div class="neutrient__card">
+                <img src="../images/cc01.png" alt="" />
+                <p class="">CC01</p>
+                <p class="product__name">Micro Nutrient</p>
+                <p class="">€9,99</p>
+                <button class="btn">Add to cart</button>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -186,6 +307,39 @@
       </div>
     </footer>
 
+    <script src="../vendors/jquery.min.js"></script>
     <script src="../js/main.js"></script>
+    <script src="../vendors/owlcarousel/owl.carousel.min.js"></script>
+    <script>
+      function owlInitialize() {
+        if ($(window).width() < 768) {
+          $("#card-neutrients").addClass("owl-carousel");
+          $(".owl-carousel").owlCarousel({
+            loop: false,
+            margin: 20,
+            stagePadding: 65,
+            nav: false,
+            dots: false,
+            responsive: {
+              0: {
+                items: 1,
+              },
+              768: {
+                items: 4,
+              },
+            },
+          });
+        } else {
+          $(".owl-carousel").owlCarousel("destroy");
+          $("#card-neutrients").removeClass("owl-carousel");
+        }
+      }
+      $(document).ready(function (e) {
+        owlInitialize();
+      });
+      $(window).resize(function () {
+        owlInitialize();
+      });
+    </script>
   </body>
 </html>
