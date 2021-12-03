@@ -152,8 +152,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
-  padding-top: 1.5rem;
+  padding: 1.5rem 0;
   border-bottom: 1px solid #e7e7e7;
 }
 .nav-logo img {
