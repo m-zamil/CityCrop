@@ -406,7 +406,7 @@ img {
   /*Navbar styles*/
   .nav-logo img {
     height: 32px;
-    height: 151px;
+    width: 151px;
   }
 
   .nav-menu {
