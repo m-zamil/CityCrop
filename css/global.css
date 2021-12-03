@@ -157,7 +157,7 @@ img {
   border-bottom: 1px solid #e7e7e7;
 }
 .nav-logo img {
-  width: 200px;
+  height: 42px;
 }
 
 .hamburger {
@@ -404,7 +404,7 @@ img {
 
   /*Navbar styles*/
   .nav-logo img {
-    width: 144px;
+    height: 32px;
   }
 
   .nav-menu {
