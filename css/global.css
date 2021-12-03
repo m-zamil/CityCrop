@@ -158,6 +158,7 @@ img {
 }
 .nav-logo img {
   height: 42px;
+  width: 199px;
 }
 
 .hamburger {
@@ -405,6 +406,7 @@ img {
   /*Navbar styles*/
   .nav-logo img {
     height: 32px;
+    height: 151px;
   }
 
   .nav-menu {
