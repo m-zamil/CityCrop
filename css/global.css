@@ -38,6 +38,13 @@ a,
 button {
   font-family: "Poppins", sans-serif;
 }
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
 h1 {
   font-size: 3.5rem;
   line-height: 1.25;
@@ -50,7 +57,6 @@ h2 {
   line-height: 1.5;
   text-align: center;
   font-weight: 600;
-
   margin: 0;
 }
 h3 {
@@ -79,26 +85,55 @@ a:hover {
   background: var(--green);
   color: var(--white);
   font-size: 1rem;
+  line-height: 1.5;
   cursor: pointer;
   text-align: center;
   border-radius: 62px;
 }
 .btn:hover {
   color: var(--white);
+  background: linear-gradient(180deg, #066b2d 0%, #1a9449 100%);
+}
+.btn:active {
+  background: linear-gradient(180deg, #0d7b38 0%, #15ae4d 100%);
 }
 
 button:hover,
 button:focus {
   outline: 0;
-  border: 0;
 }
 
-button:focus {
-  outline: 0;
+.btn--lg {
+  padding: 18px 42px;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
-button:focus-visible {
-  outline: 0;
+.btn--sm {
+  padding: 10px 26px;
+  font-size: 14px;
+}
+.btn--primary {
+  font-size: 1rem;
+}
+.btn--primary:hover {
+  color: var(--white);
+  background: linear-gradient(180deg, #066b2d 0%, #1a9449 100%);
+}
+.btn--primary:active {
+  background: linear-gradient(180deg, #0d7b38 0%, #15ae4d 100%);
+}
+.btn--secondary {
+  background-color: var(--white);
+  color: var(--green);
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.3);
+}
+.btn--secondary:hover {
+  color: var(--green);
+  background: #f3f3f3;
+}
+.btn--secondary:active {
+  background: #e7e7e7;
 }
 
 ol,
@@ -119,7 +154,7 @@ img {
 }
 
 .subhead {
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
   max-width: 500px;
   margin: 1rem auto;
@@ -166,13 +201,16 @@ img {
 
 .bar {
   display: block;
-  width: 20px;
+  width: 16px;
   height: 2px;
-  margin: 4px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: var(--black);
-  border-radius: 2px;
+  border-radius: 1px;
+  margin-bottom: 4px;
+}
+.bar:last-child {
+  margin-bottom: 0;
 }
 
 .nav-menu {
@@ -200,7 +238,7 @@ img {
 .shopping__button {
   display: flex;
   gap: 8px;
-  border-radius: 62px;
+  align-items: center;
 }
 .shop-btn--mobile {
   display: none;
@@ -401,6 +439,9 @@ img {
   .nav-link {
     color: var(--white);
   }
+  .nav-link:hover {
+    color: var(--white);
+  }
 
   /*Navbar styles*/
   .nav-logo img {
@@ -464,7 +505,6 @@ img {
   }
   .shop-btn--mobile {
     display: inline-block;
-    align-self: baseline;
     margin-left: auto;
     margin-right: 24px;
   }
@@ -482,7 +522,7 @@ img {
     font-size: 0.75rem;
   }
   .btn {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
   }
 
   .row {

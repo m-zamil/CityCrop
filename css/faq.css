@@ -2,10 +2,6 @@
   border-bottom: 0;
 }
 
-.hero__banner {
-  min-height: 400px;
-}
-
 .hero__banner img {
   max-width: 100%;
   width: 100%;
