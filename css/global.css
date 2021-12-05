@@ -312,6 +312,8 @@ img {
   color: white;
   outline: none;
   padding: 1rem 2rem;
+  padding-top: 1.75rem;
+  padding-bottom: 0.75rem;
   background: none;
   background: var(--white);
   color: var(--black);
@@ -321,8 +323,8 @@ img {
 
 .form__label {
   position: absolute;
-  left: 1rem;
-  margin: 0 0.5rem;
+  left: 2rem;
+  margin: 0;
   cursor: text;
   transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
   color: var(--black);
@@ -332,8 +334,8 @@ img {
 }
 .form__input:focus ~ .form__label,
 .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
-  top: 0rem;
-  font-size: 0.8rem;
+  top: 1.25rem;
+  font-size: 12px;
   color: var(--grey);
 }
 
@@ -342,16 +344,26 @@ img {
   gap: 20px;
 }
 
+.footer__form .form__input:focus ~ .form__label,
+.footer__form .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+  top: 1rem;
+}
+
 .footer__form .form__input {
   background: var(--white);
   border-radius: 62px;
   border: 1px solid rgba(13, 13, 13, 0.1);
   filter: none;
-  padding: 0.75rem 1rem;
+  padding: 0.75rem 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
   min-width: 300px;
+  line-height: 1.2;
+  font-size: 16px;
 }
-.footer__form .form__label {
-  background-color: #fff;
+
+.footer__form .form__input:focus {
+  border: 1px solid #70c278;
 }
 
 .footer__form .btn {
