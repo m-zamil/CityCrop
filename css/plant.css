@@ -1,0 +1,253 @@
+.breadcrumb a {
+  color: var(--green);
+  display: flex;
+  gap: 10px;
+  margin: 1rem 0 2rem;
+}
+.breadcrumb a::before {
+  content: url("../images/arrow-back.svg");
+  vertical-align: middle;
+}
+
+.plant__info {
+  padding-bottom: 1rem;
+}
+
+.plant__info .row {
+  gap: 5rem;
+}
+.product__img__wrapper {
+  max-width: 500px;
+}
+
+.product__image {
+  border: 1px solid rgba(13, 13, 13, 0.1);
+  border-radius: 10px;
+  max-width: 500px;
+  padding: 1rem;
+}
+.product__image img {
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+}
+
+.product__image__link {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.product__image__link > a {
+  cursor: pointer;
+}
+
+.product__image__link img {
+  max-width: 100%;
+}
+
+.product__image__link > a {
+  flex: auto;
+  text-align: center;
+  border: 1px solid rgba(13, 13, 13, 0.1);
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+}
+
+.plant__info h2.name {
+  font-size: 2rem;
+  text-align: left;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.5;
+}
+.plant__info .subname {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--grey);
+  margin: 0;
+}
+.plant__info h3 {
+  font-size: 18px;
+  text-align: left;
+  margin-top: 1.5rem;
+}
+.plant__info .description {
+  margin-top: 8px;
+  color: var(--grey);
+  max-width: 485px;
+}
+
+.plant__info ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  border: 1px solid rgba(13, 13, 13, 0.1);
+  border-left: 0;
+  border-right: 0;
+}
+
+.plant__info li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.plant__info li img {
+  width: 40px;
+}
+
+.plant__info li p {
+  margin: 0;
+}
+.plant__info li p.title {
+  font-size: 14px;
+}
+.plant__info li p.duration {
+  font-size: 16px;
+  color: var(--green);
+  font-weight: 600;
+}
+.plant__buy {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(13, 13, 13, 0.1);
+}
+.plant__buy p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.plant__buy .btn {
+  padding: 12px 3.5rem;
+}
+.nutrition-chart {
+  display: flex;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.chart-rep {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: var(--grey);
+}
+.chart-rep span {
+  width: 16px;
+  height: 4px;
+  background-color: #80b3e1;
+  background-size: cover;
+  display: block;
+  border-radius: 10px;
+  margin-bottom: 2px;
+}
+.chart-rep .bar-a {
+  background-color: #80b3e1;
+}
+
+.chart-rep .bar-b {
+  background-color: #fa9538;
+}
+
+.chart-rep .bar-c {
+  background-color: #fce639;
+}
+.nutrition__text {
+  font-style: italic;
+  color: var(--grey);
+  margin-top: 2rem;
+  font-size: 14px;
+}
+.plug {
+  background-color: var(--lightGrey);
+  padding: 5rem 0;
+}
+.plug .row {
+  align-items: center;
+}
+.plug .row .col-6 {
+  flex: auto;
+}
+.plug p {
+  max-width: 300px;
+  font-size: 18px;
+}
+.plug h2 {
+  text-align: left;
+  font-size: 2rem;
+}
+.plug img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .breadcrumb a {
+    margin: 1rem 0;
+  }
+  /* .plant__info{
+    padding-bottom: 0;
+  } */
+  .plant__info .row {
+    gap: 1rem;
+  }
+  .plant__info h2.name {
+    font-size: 1.5rem;
+  }
+  .plant__info .subname {
+    font-size: 1rem;
+  }
+  .plant__info ul {
+    gap: 1rem;
+  }
+
+  .plant__buy {
+    justify-content: center;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .plant__buy .btn {
+    padding: 12px 1.5rem;
+  }
+  .nutrition-chart {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .chart-rep {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    font-size: 14px;
+    align-self: stretch;
+  }
+  .nutrition__text {
+    margin-top: 1rem;
+  }
+  .plug {
+    background-color: transparent;
+    padding: 0 0 2rem;
+  }
+  .plug p {
+    max-width: auto;
+    font-size: 14px;
+  }
+  .plug h2 {
+    font-size: 1.2rem;
+  }
+
+  .product__image img {
+  }
+}
