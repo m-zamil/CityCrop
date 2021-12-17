@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Device | CityCrop</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+    <!-- Stylesheets-->
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/device.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="/" class="nav-logo"><img src="../images/logo.svg" height="42" width="199" alt="City Crop logo" /></a>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">How it works</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link active">Plant Showroom</a>
+            </li>
+            <li class="nav-item">
+              <a href="./about.html" class="nav-link">About us</a>
+            </li>
+            <li class="nav-item">
+              <a href="./contact.html" class="nav-link">Contact</a>
+            </li>
+          </ul>
+          <a href="./shop.html" class="btn shopping__button">
+            <span><img src="../images/cart.svg" alt="" width="24" height="21" /></span>
+            <span>Shop</span>
+          </a>
+          <a href="./shop.html" class="shop-btn--mobile"><img src="../images/buy.svg" alt="" /></a>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="breadcrumb container">
+        <a href="./shop.html">Back to shop</a>
+      </div>
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <div class="product__img__wrapper">
+                <div class="product__image">
+                  <img src="../images/one-bundle-1.png" alt="" />
+                  <img src="../images/CityCrop_One_Camera 1.png" alt="" />
+                </div>
+                <div class="product__image__link">
+                  <a><img src="../images/one-bundle-2t.png" alt="" /></a>
+                  <a><img src="../images/one-bundle-1t.png" alt="" /></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="product__info">
+                <h2 class="name">CityCrop™ One | Bundle</h2>
+                <div class="ratings__wrapper">
+                  <ul class="ratings__star">
+                    <li><img src="../images/star.svg" alt="" /></li>
+                    <li><img src="../images/star.svg" alt="" /></li>
+                    <li><img src="../images/star.svg" alt="" /></li>
+                    <li><img src="../images/star.svg" alt="" /></li>
+                    <li><img src="../images/star.svg" alt="" /></li>
+                  </ul>
+                  <p class="ratings">5.0 ( <span class="text-underline">15 reviews</span> )</p>
+                </div>
+
+                <h3>The CityCrop™ One Bundle includes everything you need to make truly nutritional plants:</h3>
+
+                <ul>
+                  <li>Hydroponics</li>
+                  <li>Nutrient dosing System</li>
+                  <li>Dualzome Microclimate</li>
+                  <li>LED's</li>
+                  <li>PH & EC</li>
+                  <li>Co2</li>
+                  <li>Camera</li>
+                  <li>Humidity</li>
+                  <li>Open Trays</li>
+                </ul>
+                <div class="plant__buy">
+                  <p class="">€6,99</p>
+                  <button class="btn">Add to cart</button>
+                </div>
+                <div class="payment__methods">
+                  <img src="../images/ApplePay.svg" alt="" width="60" height="40" />
+                  <img src="../images/GooglePay.svg" alt="" width="60" height="40" />
+                  <img src="../images/Mastercard-Full.svg" alt="" width="60" height="40" />
+                  <img src="../images/Paypal.svg" alt="" width="60" height="40" />
+                  <img src="../images/Stripe.svg" alt="" width="60" height="40" />
+                  <img src="../images/Visa-Classic.svg" alt="" width="60" height="40" />
+                  <img src="../images/Amex.svg" alt="" width="60" height="40" />
+                </div>
+                <div class="buying__note">
+                  <p>
+                    <span><img src="../images/shipping.png" alt="" /></span> Ships Fully Assembled
+                  </p>
+                  <p>
+                    <span><img src="../images/kit.png" alt="" /></span> Includes Free Grow Kit (€49.99 Value)
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="info__wrapper">
+        <div class="info__nav">
+          <div class="tab container">
+            <a class="tablink active" onclick="openTab(event, 'details')" id="defaultOpen">Details</a>
+            <a class="tablink" onclick="openTab(event, 'specs')">Specs</a>
+            <a class="tablink" onclick="openTab(event, 'components')">What’s in the box</a>
+            <a class="tablink" onclick="openTab(event, 'faq')">FAQ</a>
+            <a class="tablink" onclick="openTab(event, 'reviews')">Customer reviews</a>
+          </div>
+        </div>
+        <div class="info__content container tab">
+          <a class="tablink accordion">Details</a>
+          <div id="details" class="tabcontent">this is details content</div>
+          <a class="tablink accordion">Specs</a>
+          <div id="specs" class="tabcontent">
+            <h3>Specs</h3>
+            <table class="specs">
+              <tr>
+                <th>Height:</th>
+                <td>42.44cm / 16.7”</td>
+              </tr>
+              <tr>
+                <th>Width:</th>
+                <td>47.17cm / 18.57”</td>
+              </tr>
+              <tr>
+                <th>Diameter:</th>
+                <td>53.9cm / 21.22”</td>
+              </tr>
+              <tr>
+                <th>Weight:</th>
+                <td>Weight 30 kg, 66 lb</td>
+              </tr>
+            </table>
+          </div>
+          <a class="tablink accordion">What’s in the box</a>
+          <div id="components" class="tabcontent">
+            <h3>What’s in the box</h3>
+            <ul>
+              <li>Hydroponics</li>
+              <li>Nutrient dosing System</li>
+              <li>Dualzome Microclimate</li>
+              <li>LED's</li>
+              <li>PH &amp; EC</li>
+              <li>Co2</li>
+              <li>Camera</li>
+              <li>Humidity</li>
+              <li>Open Trays</li>
+            </ul>
+          </div>
+          <a class="tablink accordion">FAQ</a>
+          <div id="faq" class="tabcontent">
+            <h3>FAQ</h3>
+            <button class="accordion">What is CityCrop?</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <button class="accordion">What is the size of CityCrop?</button>
+            <div class="panel">
+              <p>CityCrop One (H x W x D) 42.44cm x 47.17cm x 53.9cm | 16.7” x 18.57” x 21.22” Weight 30 kg, 66 lb CityCrop Twin (H x W x D) 84.66cm x 47.17cm x 53.9cm | 33.33” x 18.57” x 21.22” Weight 55 kg, 121 lb</p>
+            </div>
+
+            <button class="accordion">Do I need an internet connection?</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="accordion">What kind of electrical outlet do I need?</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="accordion">How much electricity does the CityCrop One and CityCrop Twin use?</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+            </div>
+            <button class="accordion">Do I need any previous growing experience to use CityCrop?</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+            </div>
+            <button class="accordion">What can I grow?</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+            </div>
+          </div>
+          <a class="tablink accordion">Customer reviews</a>
+          <div id="reviews" class="tabcontent">this is reviews</div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="address-payment">
+          <div class="flex gap-1">
+            <div class="office__address">
+              <p class="footer_title">Our office</p>
+              <div class="address">
+                <span><img src="../images/Greece.svg" alt="" /></span>
+                <p>Greece, Egg, 190 Syngrou Avenue, 176 71, Athens</p>
+              </div>
+            </div>
+            <div class="email__address">
+              <p class="footer_title">Our e-mail</p>
+              <p>info@citycrop.io</p>
+            </div>
+          </div>
+          <div class="payment__methods">
+            <img src="../images/ApplePay.svg" alt="" width="60" height="40" />
+            <img src="../images/GooglePay.svg" alt="" width="60" height="40" />
+            <img src="../images/Mastercard-Full.svg" alt="" width="60" height="40" />
+            <img src="../images/Paypal.svg" alt="" width="60" height="40" />
+            <img src="../images/Stripe.svg" alt="" width="60" height="40" />
+            <img src="../images/Visa-Classic.svg" alt="" width="60" height="40" />
+            <img src="../images/Amex.svg" alt="" width="60" height="40" />
+          </div>
+        </div>
+        <div class="footer__row--2">
+          <div class="badges">
+            <a href="#"><img src="../images/appstore-badge.svg" alt="" /></a>
+            <a href="#"><img src="../images/google-store-badge.svg" alt="" /></a>
+          </div>
+          <div><img src="../images/cont.jpg" alt="" /></div>
+          <div>
+            <form class="footer__form">
+              <div class="input__wrapper">
+                <input name="Email" type="email" id="f-email" class="form__input" autocomplete="off" placeholder=" " />
+                <label for="f-email" class="form__label">Email address</label>
+              </div>
+
+              <button type="submit" class="btn">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer__row--end">
+          <div class="links"><a href="#">Privacy Policy</a><span>|</span><a href="#">Terms and Conditions</a><span>|</span><a href="#">Terms of Service</a></div>
+          <div><p>© 2021 CityCrop. All rights reserved</p></div>
+          <div>
+            <ul class="social-nav">
+              <li>
+                <a href="#" target="_blank" title="Facebook" rel="nofollow"><img src="../images/facebook.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="#" target="_blank" title="Twitter" rel="nofollow"><img src="../images/twitter.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="#" target="_blank" title="Youtube" rel="nofollow"><img src="../images/youtube.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="#" target="_blank" title="Linkedin" rel="nofollow"><img src="../images/linkedin.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href="#" target="_blank" title="Instagram" rel="nofollow"><img src="../images/instagram.svg" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+      //top banner image slider
+      const productImgs = document.querySelectorAll(".product__image img");
+      productImgs[1].style.display = "none";
+      const productImgLinks = document.querySelectorAll(".product__image__link > a");
+      productImgLinks[0].addEventListener("click", function () {
+        productImgs[0].style.display = "block";
+        productImgs[1].style.display = "none";
+      });
+      productImgLinks[1].addEventListener("click", function () {
+        productImgs[0].style.display = "none";
+        productImgs[1].style.display = "block";
+      });
+
+      //product info tabs
+      function openTab(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.querySelectorAll(".tablink:not(.accordion)");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+        console.log("function called");
+      }
+
+      //Accordion Script
+      var acc = document.querySelectorAll(".accordion:not(.tablink)");
+
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+
+      if (screen.width > 768) {
+        document.getElementById("defaultOpen").click();
+      }
+
+      // //Product info accordion mobile
+
+      let accordion = document.querySelectorAll(".tablink.accordion");
+      console.log(accordion);
+
+      var i;
+
+      for (i = 0; i < accordion.length; i++) {
+        accordion[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display == "block") {
+            // panel.style.maxHeight = null;
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+            // panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

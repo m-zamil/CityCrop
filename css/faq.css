@@ -142,8 +142,7 @@
   position: relative;
 }
 
-.accordion.active,
-.accordion:hover {
+.accordion.active {
   color: var(--green);
 }
 
