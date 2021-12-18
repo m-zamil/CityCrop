@@ -1,0 +1,101 @@
+.intro-content {
+  margin: 5rem 0 3rem;
+}
+
+.subhead {
+  max-width: 750px;
+}
+
+.recipe__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.recipe__card {
+  max-width: 300px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 14px 14px 8px 8px;
+  margin-bottom: 1rem;
+}
+
+.recipe__img img {
+  max-width: 100%;
+  border-radius: 14px 14px 0 0;
+}
+
+.recipe__title {
+  font-size: 18px;
+  text-align: left;
+}
+.recipe__seeds {
+  color: var(--grey);
+  margin-top: 4px;
+}
+.recipe__content {
+  padding: 20px;
+}
+
+.load__more__btn {
+  text-align: center;
+  margin-top: 2rem;
+  user-select: none;
+}
+.load__more__btn .btn {
+  background-color: transparent;
+  color: var(--green);
+  border: 1px solid var(--green);
+}
+
+.load__more__btn .btn:hover,
+.load__more__btn .btn:active {
+  background: transparent;
+  color: var(--green);
+  border: 1px solid var(--green);
+}
+
+.experience {
+  background-color: var(--lightGrey);
+  padding: 2rem 0;
+  margin-top: 5rem;
+}
+.experience .row {
+  align-items: center;
+}
+
+.experience h2 {
+  text-align: left;
+  max-width: 350px;
+}
+.experience p {
+  max-width: 370px;
+  margin: 2rem 0;
+}
+.experience img {
+  max-width: 500px;
+}
+.experience h2 div {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .experience img {
+    max-width: 100%;
+  }
+  .experience h2 {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .experience p {
+    text-align: center;
+    margin: 1rem auto;
+  }
+  .experience .row {
+    text-align: center;
+    gap: 2rem;
+  }
+  .experience h2 div {
+    display: block;
+  }
+}

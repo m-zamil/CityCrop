@@ -419,9 +419,16 @@
 .load__more__btn {
   text-align: center;
   margin-top: 2rem;
+  user-select: none;
 }
 .load__more__btn .btn {
   background-color: transparent;
+  color: var(--green);
+  border: 1px solid var(--green);
+}
+.load__more__btn .btn:hover,
+.load__more__btn .btn:active {
+  background: transparent;
   color: var(--green);
   border: 1px solid var(--green);
 }

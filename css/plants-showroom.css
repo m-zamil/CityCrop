@@ -266,7 +266,8 @@
   border: 1px solid var(--green);
 }
 
-.load__more__btn .btn:hover {
+.load__more__btn .btn:hover,
+.load__more__btn .btn:active {
   background: transparent;
   color: var(--green);
   border: 1px solid var(--green);
