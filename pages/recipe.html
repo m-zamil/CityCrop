@@ -12,7 +12,7 @@
 
     <!-- Stylesheets-->
     <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/recipes.css" />
+    <link rel="stylesheet" href="../css/recipe.css" />
   </head>
   <body>
     <header class="header">
@@ -53,74 +53,86 @@
       </div>
     </header>
     <main>
-      <section class="intro-content">
+      <div class="breadcrumb container">
+        <a href="./recipes.html">Back to all recipes</a>
+      </div>
+      <section class="recipe__details">
         <div class="container">
-          <h2>Recipes</h2>
-          <p class="subhead">Are you keen to find out what food you can magically conjure up with the Greens you grow in the Plantcube? You’ll find plenty of tasty ideas to inspire you here:</p>
+          <h2 class="recipe__title">Crispy potato salad with herbaceous Watercress cream</h2>
+          <p class="subhead recipe__desc">Are you Team potato salad with mayo or vinegar/oil? We have a completely different idea! How about crispy potatoes combined with Watercress for an extra spicy touch?</p>
+          <div class="recipe__img">
+            <picture>
+              <source media="(max-width:768px)" srcset="../images/recipe-cover-1-mb.png" />
+              <img src="../images/recipe-cover-1.png" alt="" />
+            </picture>
+          </div>
+          <div class="recipe__ingredients">
+            <h3>Ingredients</h3>
+            <div class="ingredients">
+              <div class="ingredient__lists">
+                <div>
+                  <h4>For the potato salad:</h4>
+                  <ul>
+                    <li>500 g baby potatoes</li>
+                    <li>25 g chopped almonds</li>
+                    <li>8 radishes</li>
+                    <li>25 g chives</li>
+                    <li>10 g oregano</li>
+                    <li>3 tbsp olive oil</li>
+                    <li>2 tsp garlic powder</li>
+                    <li>Salt & pepper</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4>For the cream:</h4>
+                  <ul>
+                    <li>200 g cream cheese</li>
+                    <li>1 Seedbar Watercress</li>
+                    <li>1 lemon</li>
+                    <li>1 tsp dijon mustard</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="info__card__wrapper">
+                <div class="info__card">
+                  <img src="../images/heat.svg" alt="" />
+                  <p>315 kkal</p>
+                </div>
+                <div class="info__card">
+                  <img src="../images/time.svg" alt="" />
+                  <p>40 min</p>
+                </div>
+                <div class="info__card">
+                  <img src="../images/part.svg" alt="" />
+                  <p>2 part</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="recipe__process">
+            <h3>Process</h3>
+            <div class="process">
+              <h4>Step 1:</h4>
+              <p>Preheat oven to 200°C (top and bottom heat). Wash baby potatoes and cut in half lengthwise. Wash oregano, dry and pluck leaves.</p>
+              <h4>Step 2:</h4>
+              <p>Place baby potatoes on a baking tray covered with baking paper, drizzle with oil and season with salt, pepper, garlic powder as well as oregano. Mix everything and roast for about 25 minutes.</p>
+              <h4>Step 3:</h4>
+              <p>In the meantime, cut lemon in half and squeeze juice. Harvest Watercress and chop coarsely. Set aside some cress for garnish. Wash and finely chop the chives.</p>
+              <h4>Step 4:</h4>
+              <p>Put cream cheese, lemon juice, Watercress and Dijon mustard in a blender and mix until creamy. Add salt and chives, mix and set aside.</p>
+              <h4>Step 5:</h4>
+              <p>Wash radishes and cut into thin slices. Roast almonds in a pan until golden brown.</p>
+              <h4>Step 6:</h4>
+              <p>Spread cream cheese on a plate and serve with potatoes, Watercress and radishes. If desired, drizzle with a little olive oil, garnish with toasted almond flakes and enjoy.</p>
+            </div>
+            <p>Recipe provided by the cooking app KptnCook <a href="#" class="app__link">KptnCook</a></p>
+          </div>
         </div>
       </section>
       <section>
-        <div class="container">
-          <div class="recipe__cards">
-            <a href="./recipe.html">
-              <div class="recipe__card">
-                <div class="recipe__img"><img src="../images/recipe-1.png" alt="" /></div>
-                <div class="recipe__content">
-                  <h2 class="recipe__title">Summer salad with Micro Amaranth</h2>
-                  <p class="recipe__seeds">Seeds: Lettuce Green Oak Leaf</p>
-                </div>
-              </div>
-            </a>
-            <a href="./recipe.html">
-              <div class="recipe__card">
-                <div class="recipe__img"><img src="../images/recipe-2.png" alt="" /></div>
-                <div class="recipe__content">
-                  <h2 class="recipe__title">Crispy potato salad with herbaceous Watercress cream</h2>
-                  <p class="recipe__seeds">Seeds: Butter Lettuce</p>
-                </div>
-              </div>
-            </a>
-            <a href="./recipe.html">
-              <div class="recipe__card">
-                <div class="recipe__img"><img src="../images/recipe-3.png" alt="" /></div>
-                <div class="recipe__content">
-                  <h2 class="recipe__title">Summer salad with Micro Amaranth</h2>
-                  <p class="recipe__seeds">Seeds: Lettuce Green Oak Leaf</p>
-                </div>
-              </div>
-            </a>
-            <a href="./recipe.html">
-              <div class="recipe__card">
-                <div class="recipe__img"><img src="../images/recipe-2.png" alt="" /></div>
-                <div class="recipe__content">
-                  <h2 class="recipe__title">Crispy potato salad with herbaceous Watercress cream</h2>
-                  <p class="recipe__seeds">Seeds: Butter Lettuce</p>
-                </div>
-              </div>
-            </a>
-            <a href="./recipe.html">
-              <div class="recipe__card">
-                <div class="recipe__img"><img src="../images/recipe-3.png" alt="" /></div>
-                <div class="recipe__content">
-                  <h2 class="recipe__title">Summer salad with Micro Amaranth</h2>
-                  <p class="recipe__seeds">Seeds: Lettuce Green Oak Leaf</p>
-                </div>
-              </div>
-            </a>
-            <a href="./recipe.html">
-              <div class="recipe__card">
-                <div class="recipe__img"><img src="../images/recipe-1.png" alt="" /></div>
-                <div class="recipe__content">
-                  <h2 class="recipe__title">Summer salad with Micro Amaranth</h2>
-                  <p class="recipe__seeds">Seeds: Lettuce Green Oak Leaf</p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="load__more__btn">
-            <button class="btn">Load more</button>
-          </div>
-        </div>
+        <div class="container"></div>
       </section>
       <section class="experience">
         <div class="container">
@@ -207,7 +219,6 @@
         </div>
       </div>
     </footer>
-
     <script src="../js/main.js"></script>
   </body>
 </html>
