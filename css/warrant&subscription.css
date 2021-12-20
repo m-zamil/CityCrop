@@ -1,0 +1,119 @@
+body {
+  counter-reset: section;
+}
+
+.section__label {
+  color: var(--green);
+  font-weight: 600;
+  font-size: 18px;
+  border-bottom: 1px solid var(--green);
+  padding-bottom: 1.5rem;
+}
+
+section .headline {
+  margin: 4rem 0 2.5rem;
+  font-size: 2rem;
+}
+
+.section__label::before {
+  counter-increment: section;
+  content: counter(section);
+  margin-right: 20px;
+  background-color: var(--green);
+  border-radius: 50%;
+  font-weight: 400;
+  color: white;
+  line-height: 1;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.warranty,
+.subscription {
+  margin-top: 3.5rem;
+}
+
+.warranty__cards,
+.subs__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.warranty__card,
+.subs__card {
+  max-width: 210px;
+  border: 1px solid rgba(13, 13, 13, 0.1);
+  border-radius: 6px;
+  padding: 1.5rem;
+  position: relative;
+  padding-bottom: 88px;
+  min-height: 267px;
+}
+
+.warranty__card h3 {
+  text-align: left;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+.warranty__card ul li {
+  color: var(--grey);
+}
+.warranty__card ul li:not(:last-child) {
+  margin-bottom: 12px;
+}
+.warranty__card p:last-child {
+  font-weight: 600;
+  font-size: 1.25rem;
+  position: absolute;
+  bottom: 0;
+}
+.warranty__note {
+  margin: 3rem auto;
+  max-width: 710px;
+}
+.subscription {
+}
+.subscription .subhead {
+  color: var(--grey);
+  max-width: 850px;
+}
+
+@media (max-width: 768px) {
+  .warranty,
+  .subscription {
+    margin-top: 2rem;
+  }
+  .section__label {
+    font-size: 16px;
+    padding-bottom: 12px;
+  }
+  .section__label::before {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+  section .headline {
+    margin: 3rem 0 2rem;
+    font-size: 1.7rem;
+  }
+  .warranty__cards,
+  .subs__cards {
+    gap: 1.5rem;
+  }
+  .warranty__card h3 {
+    font-size: 18px;
+  }
+  .warranty__card ul li {
+    font-size: 14px;
+  }
+  .warranty__card p:last-child {
+    font-size: 20px;
+  }
+  .warranty__note {
+    font-size: 12px;
+    margin: 1rem auto 3rem;
+  }
+}
