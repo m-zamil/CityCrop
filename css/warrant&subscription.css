@@ -51,6 +51,16 @@ section .headline {
   position: relative;
   padding-bottom: 88px;
   min-height: 267px;
+  cursor: pointer;
+}
+.warranty__card.active,
+.subs__card.active {
+  border-color: var(--green);
+}
+.subs__card {
+  max-width: 225px;
+  min-height: 306px;
+  cursor: default;
 }
 
 .warranty__card h3 {
@@ -70,6 +80,9 @@ section .headline {
   position: absolute;
   bottom: 0;
 }
+.warranty__card.active p:last-child {
+  color: var(--green);
+}
 .warranty__note {
   margin: 3rem auto;
   max-width: 710px;
@@ -79,6 +92,127 @@ section .headline {
 .subscription .subhead {
   color: var(--grey);
   max-width: 850px;
+}
+.subs__price {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0;
+}
+.subs__price .price {
+  color: var(--green);
+}
+.subs__price span:last-child {
+  font-size: 14px;
+  color: var(--grey);
+  font-weight: 400;
+  vertical-align: middle;
+}
+.subs__title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.subs__saving {
+  font-size: 14px;
+  color: var(--grey);
+}
+.subs__btn {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 2rem;
+}
+
+.subs__title span img {
+  vertical-align: middle;
+  line-height: 1;
+  width: 14px;
+  height: 14px;
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  border: 1px solid #888;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  padding: 5rem;
+  border-radius: 16px;
+  text-align: center;
+  flex: 1;
+}
+.modal-content p {
+  max-width: 650px;
+  margin: 2rem auto;
+  line-height: 1.75;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.close img {
+  vertical-align: baseline;
+}
+
+.cart__btn {
+  text-align: center;
+  margin: 3rem 0;
 }
 
 @media (max-width: 768px) {
@@ -115,5 +249,9 @@ section .headline {
   .warranty__note {
     font-size: 12px;
     margin: 1rem auto 3rem;
+  }
+  .modal-content {
+    margin: 0 2rem;
+    padding: 3rem 1.5rem;
   }
 }
