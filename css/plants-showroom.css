@@ -327,6 +327,16 @@
   .dropdown:last-child .dropbtn {
     margin-bottom: 0;
   }
+  .dropbtn {
+    border: 0;
+    border-radius: 0;
+    border-bottom: 2px solid #e5e5e5;
+    padding: 22px 0;
+    margin-bottom: 0;
+  }
+  .dropdown-content a {
+    padding: 12px 0;
+  }
 
   .filter-bar > div {
     flex: initial;
@@ -376,20 +386,9 @@
     border-bottom: 2px solid #e5e5e5;
     padding: 22px 0;
   }
-  .dropbtn {
-    border: 0;
-    border-radius: 0;
-    border-bottom: 2px solid #e5e5e5;
-    padding: 22px 0;
-    margin-bottom: 0;
-  }
 
   .filter-mobile.open .dropbtn.open {
     z-index: 3;
-  }
-
-  .dropdown-content a {
-    padding: 12px 0;
   }
 
   .products__cards {
