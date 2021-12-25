@@ -386,6 +386,25 @@ img {
   display: flex;
   gap: 8px;
   align-items: center;
+  position: relative;
+  padding: 12px 2rem;
+}
+.cart {
+  position: relative;
+}
+.counter {
+  background-color: #ff7478;
+  border-radius: 50%;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  line-height: 20px;
+  font-size: 10px;
+  right: -10px;
+  top: -6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .shop-btn--mobile {
   display: none;
