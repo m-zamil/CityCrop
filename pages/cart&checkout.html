@@ -39,10 +39,8 @@
               <a href="./contact.html" class="nav-link">Contact</a>
             </li>
           </ul>
-          <a href="./shop.html" class="btn shopping__button">
+          <a class="btn shopping__button cart__sidebar__btn">
             <span class="cart"><img src="../images/cart.svg" alt="" width="24" height="21" /> <span class="counter">2</span></span>
-
-            <!-- <span>Shop</span> -->
           </a>
           <a href="./shop.html" class="shop-btn--mobile"><img src="../images/buy.svg" alt="" /></a>
           <div class="hamburger">
@@ -370,6 +368,48 @@
         </div>
       </div>
     </footer>
+    <div class="cart__sidebar">
+      <span class="cart__sidebar__close">
+        <img src="../images/close-icon-b.svg" alt="" />
+      </span>
+      <ul>
+        <li class="cart__item">
+          <div class="product__card">
+            <div><img src="../images/citycrop-one-bundle-t.png" alt="" /></div>
+            <div>
+              <h2>CityCrop One | Bundle</h2>
+              <p>1 X €1 499</p>
+            </div>
+          </div>
+          <div class="remove__product__btn"><img src="../images/remove-product.svg" alt="" /></div>
+        </li>
+        <li class="cart__item">
+          <div class="product__card">
+            <div><img src="../images/citycrop-one-bundle-t.png" alt="" /></div>
+            <div>
+              <h2>CityCrop One | Bundle</h2>
+              <p>1 X €1 499</p>
+            </div>
+          </div>
+          <div class="remove__product__btn"><img src="../images/remove-product.svg" alt="" /></div>
+        </li>
+        <li class="cart__item">
+          <div class="product__card">
+            <div><img src="../images/citycrop-one-bundle-t.png" alt="" /></div>
+            <div>
+              <h2>CityCrop One | Bundle</h2>
+              <p>1 X €1 499</p>
+            </div>
+          </div>
+          <div class="remove__product__btn"><img src="../images/remove-product.svg" alt="" /></div>
+        </li>
+        <li class="subtotal"><span>Subtotal:</span><span>€4 497</span></li>
+        <li class="btns">
+          <a class="btn btn--outline">View cart</a>
+          <a class="btn">Checkout</a>
+        </li>
+      </ul>
+    </div>
 
     <script src="../js/main.js"></script>
     <script>
@@ -431,7 +471,7 @@
         });
       });
 
-      /*Select dropdown*/
+      /*Select option dropdown for country form field*/
       var x, i, j, l, ll, selElmnt, a, b, c;
 
       x = document.getElementsByClassName("custom-select");
@@ -506,6 +546,19 @@
       }
 
       document.addEventListener("click", closeAllSelect);
+
+      //Open cart side bar
+      const cartSidebarBtn = document.querySelector(".cart__sidebar__btn");
+      const cartSidebar = document.querySelector(".cart__sidebar");
+      const closeSidebar = document.querySelector(".cart__sidebar__close");
+      cartSidebarBtn.addEventListener("click", function () {
+        cartSidebar.style.right = 0;
+        // cartSidebar.style.display = "block";
+      });
+      closeSidebar.addEventListener("click", function () {
+        cartSidebar.style.right = "-100%";
+        // cartSidebar.style.display = "none";
+      });
     </script>
   </body>
 </html>
