@@ -116,13 +116,13 @@
 .plant__buy {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
   margin-top: 1.5rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid rgba(13, 13, 13, 0.1);
 }
 .plant__buy p {
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 600;
   margin: 0;
   line-height: 1.5;

@@ -37,6 +37,7 @@
 .hero__content p {
   max-width: 365px;
   font-size: 1.25rem;
+  font-weight: 300;
 }
 .hero__content .btn {
   margin-top: 1rem;
@@ -121,6 +122,11 @@
   margin-bottom: 3rem;
   font-size: 14px;
 }
+.info__btn:hover {
+  background-color: white;
+  color: var(--green);
+  transition: all 0.2s;
+}
 
 /*Video section*/
 .video__section {
@@ -202,6 +208,7 @@
 }
 .advantages__list p {
   margin: 0;
+  font-weight: 300;
 }
 .advantages__list li:last-child {
   align-self: center;
@@ -264,6 +271,9 @@
   max-width: 300px;
   text-align: center;
   margin: 0 auto;
+}
+.grow__card:hover {
+  border: 1px solid rgba(13, 13, 13, 0.25);
 }
 .grow__card img {
   width: 175px !important;

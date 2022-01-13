@@ -132,6 +132,9 @@
   flex: auto;
   overflow: hidden;
 }
+.product__card:hover {
+  border: 1px solid rgba(13, 13, 13, 0.3);
+}
 .product__card .detail-tag {
   text-align: right;
   line-height: 1;
@@ -258,12 +261,6 @@
   padding: 5rem 0 2rem;
   color: var(--grey);
   font-size: 14px;
-}
-
-.load__more__btn .btn {
-  background-color: transparent;
-  color: var(--green);
-  border: 1px solid var(--green);
 }
 
 .load__more__btn .btn:hover,

@@ -22,19 +22,12 @@ video.addEventListener("pause", showOverlay);
 overlay.addEventListener("click", hideOverlay);
 
 $(document).ready(function () {
-  // $("#hero_slider").owlCarousel({
-  //   items: 1,
-  //   loop: false,
-  //   margin: 10,
-  //   nav: false,
-  //   dots: true,
-  // });
-});
-
-$(document).ready(function () {
   $("#hero_slider").owlCarousel({
     items: 1,
-    loop: false,
+    loop: true,
+    autoplay: true,
+    smartSpeed: 800,
+    autoplayTimeout: 5000,
     margin: 10,
     nav: false,
     dots: true,

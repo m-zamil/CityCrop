@@ -369,6 +369,10 @@
   display: flex;
   justify-content: space-between;
 }
+.footer {
+  background: rgba(247, 248, 251, 0.5);
+  margin-top: 4rem;
+}
 
 @media (max-width: 768px) {
   .tab__btns button {
