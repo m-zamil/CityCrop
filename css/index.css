@@ -235,18 +235,8 @@
 .app__content > div {
   margin-bottom: 1.5rem;
 }
-.app__content > div:last-child {
+.app__content p {
   margin-bottom: 0;
-}
-.app__content h3,
-.app__content p {
-  text-align: left;
-}
-.app__content h3 {
-  font-size: 1.3rem;
-}
-.app__content p {
-  font-size: 12px;
 }
 
 .app__visual {
@@ -400,6 +390,26 @@
   flex-direction: column;
   margin-top: 3rem;
   gap: 24px;
+}
+.accordion {
+  color: white;
+  font-size: 1.3rem;
+  line-height: 1.25;
+  font-weight: 600;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  background-color: transparent;
+}
+
+.panel {
+  font-size: 14px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 /*Responsive design*/

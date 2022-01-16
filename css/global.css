@@ -312,7 +312,8 @@ img {
   border-radius: 12px;
   z-index: 1;
   padding: 0 24px;
-  transition: all 0.24s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transition: all 0.24s cubic-bezier(0.215, 0.61, 0.355, 1),
+    opacity 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
   box-shadow: 0 12px 18px rgb(0, 0, 0, 0.14);
 }
 
@@ -511,7 +512,9 @@ img {
 }
 
 .footer__form .form__input:focus ~ .form__label,
-.footer__form .form__input:not(:placeholder-shown).form__input:not(:focus) ~ .form__label {
+.footer__form
+  .form__input:not(:placeholder-shown).form__input:not(:focus)
+  ~ .form__label {
   top: 1rem;
 }
 
@@ -613,16 +616,7 @@ img {
   width: 40px;
 }
 /*Cart sidebar*/
-.cart__sidebar {
-  position: absolute;
-  min-height: 100vh;
-  right: -100%;
-  top: 0;
-  background-color: #f7f8fb;
-  padding: 3rem;
-  transition: all 0.5s;
-  /* display: none; */
-}
+
 .cart__sidebar__close {
   position: absolute;
   top: 1rem;
@@ -633,6 +627,75 @@ img {
   padding: 1rem 0;
   gap: 2rem;
 }
+
+.cart__sidebar__wrapper {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  transition: none;
+  padding: 0;
+  display: none;
+  background-color: rgba(13, 13, 13, 0.6);
+}
+
+.cart__sidebar {
+  min-height: 100vh;
+  right: 0;
+  top: 0;
+  padding: 3rem;
+  width: auto;
+  position: absolute;
+  background-color: #f7f8fb;
+  transition: transform 0.4s;
+  overflow-y: scroll;
+  height: 100vh;
+  animation-name: mymove;
+  animation-duration: 0.5s;
+  animation-delay: 0ms;
+}
+@keyframes mymove {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0;
+  }
+}
+.cart__sidebar::-webkit-scrollbar-button {
+  width: 50px;
+  height: 50px;
+}
+
+.cart__sidebar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.cart__sidebar::-webkit-scrollbar-track {
+  background: #f7f8fb;
+}
+
+.cart__sidebar::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.cart__sidebar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.cart__sidebar .cart__item {
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid #e7e7e7;
+  position: relative;
+  justify-content: space-between;
+  padding: 1rem 0;
+  gap: 2rem;
+}
+
 .cart__sidebar .cart__item > div {
   width: auto !important;
   gap: 8px;
