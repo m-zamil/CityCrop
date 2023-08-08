@@ -1,238 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recipe | CityCrop</title>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 
-    <!-- Stylesheets-->
-    <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/recipe.css" />
-  </head>
-  <body>
-    <header class="header">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe | CityCrop</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets-->
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/recipe.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="/" class="nav-logo"><img src="../images/logo.svg" height="42" width="199" alt="City Crop logo"></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="/" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">How it works</a>
+          </li>
+          <li class="nav-item">
+            <a href="./faq.html" class="nav-link">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a href="./plants-showroom.html" class="nav-link active">Plant Showroom</a>
+          </li>
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link">About us</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <a href="./shop.html" class="btn shopping__button">
+          <span><img src="../images/cart.svg" alt="" width="24" height="21"></span>
+          <span>Shop</span>
+        </a>
+        <a href="./shop.html" class="shop-btn--mobile"><img src="../images/buy.svg" alt=""></a>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="breadcrumb container">
+      <a href="./recipes.html">Back to all recipes</a>
+    </div>
+    <section class="recipe__details">
       <div class="container">
-        <nav class="navbar">
-          <a href="/" class="nav-logo"><img src="../images/logo.svg" height="42" width="199" alt="City Crop logo" /></a>
-          <ul class="nav-menu">
-            <li class="nav-item">
-              <a href="/" class="nav-link">Home</a>
+        <h2 class="recipe__title">Crispy potato salad with herbaceous Watercress cream</h2>
+        <p class="subhead recipe__desc">
+          Are you Team potato salad with mayo or vinegar/oil? We have a completely different idea! How about crispy
+          potatoes combined with Watercress for an
+          extra spicy touch?
+        </p>
+        <div class="recipe__img">
+          <picture>
+            <source media="(max-width:768px)" srcset="../images/recipe-cover-1-mb.png">
+            <img src="../images/recipe-cover-1.png" alt="">
+          </picture>
+        </div>
+        <div class="recipe__ingredients">
+          <h3>Ingredients</h3>
+          <div class="ingredients">
+            <div class="ingredient__lists">
+              <div>
+                <h4>For the potato salad:</h4>
+                <ul>
+                  <li>500 g baby potatoes</li>
+                  <li>25 g chopped almonds</li>
+                  <li>8 radishes</li>
+                  <li>25 g chives</li>
+                  <li>10 g oregano</li>
+                  <li>3 tbsp olive oil</li>
+                  <li>2 tsp garlic powder</li>
+                  <li>Salt & pepper</li>
+                </ul>
+              </div>
+              <div>
+                <h4>For the cream:</h4>
+                <ul>
+                  <li>200 g cream cheese</li>
+                  <li>1 Seedbar Watercress</li>
+                  <li>1 lemon</li>
+                  <li>1 tsp dijon mustard</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="info__card__wrapper">
+              <div class="info__card">
+                <img src="../images/heat.svg" alt="">
+                <p>315 kkal</p>
+              </div>
+              <div class="info__card">
+                <img src="../images/time.svg" alt="">
+                <p>40 min</p>
+              </div>
+              <div class="info__card">
+                <img src="../images/part.svg" alt="">
+                <p>2 part</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="recipe__process">
+          <h3>Process</h3>
+          <div class="process">
+            <h4>Step 1:</h4>
+            <p>Preheat oven to 200°C (top and bottom heat). Wash baby potatoes and cut in half lengthwise. Wash oregano,
+              dry and pluck leaves.</p>
+            <h4>Step 2:</h4>
+            <p>
+              Place baby potatoes on a baking tray covered with baking paper, drizzle with oil and season with salt,
+              pepper, garlic powder as well as oregano.
+              Mix everything and roast for about 25 minutes.
+            </p>
+            <h4>Step 3:</h4>
+            <p>
+              In the meantime, cut lemon in half and squeeze juice. Harvest Watercress and chop coarsely. Set aside some
+              cress for garnish. Wash and finely
+              chop the chives.
+            </p>
+            <h4>Step 4:</h4>
+            <p>Put cream cheese, lemon juice, Watercress and Dijon mustard in a blender and mix until creamy. Add salt
+              and chives, mix and set aside.</p>
+            <h4>Step 5:</h4>
+            <p>Wash radishes and cut into thin slices. Roast almonds in a pan until golden brown.</p>
+            <h4>Step 6:</h4>
+            <p>
+              Spread cream cheese on a plate and serve with potatoes, Watercress and radishes. If desired, drizzle with
+              a little olive oil, garnish with
+              toasted almond flakes and enjoy.
+            </p>
+          </div>
+          <p>Recipe provided by the cooking app KptnCook <a href="#" class="app__link">KptnCook</a></p>
+        </div>
+      </div>
+    </section>
+    <section class="experience">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <h2>
+              Experience
+              <br class="bt-mb">
+              our products live
+            </h2>
+            <p>Visit our distributors, experience, the variety of Seedbars and the CityCrop App in use.</p>
+            <button class="btn">Buy right now</button>
+          </div>
+          <div class="col-6"><img src="../images/experience-products-live.png" alt=""></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="address-payment">
+        <div class="flex gap-1">
+          <div class="office__address">
+            <p class="footer_title">Our office</p>
+            <div class="address">
+              <span><img src="../images/Greece.svg" alt=""></span>
+              <p>Greece, Egg, 190 Syngrou Avenue, 176 71, Athens</p>
+            </div>
+          </div>
+          <div class="email__address">
+            <p class="footer_title">Our e-mail</p>
+            <p>info@citycrop.io</p>
+          </div>
+        </div>
+        <div class="payment__methods">
+          <img src="../images/ApplePay.svg" alt="" width="60" height="40">
+          <img src="../images/GooglePay.svg" alt="" width="60" height="40">
+          <img src="../images/Mastercard-Full.svg" alt="" width="60" height="40">
+          <img src="../images/Paypal.svg" alt="" width="60" height="40">
+          <img src="../images/Stripe.svg" alt="" width="60" height="40">
+          <img src="../images/Visa-Classic.svg" alt="" width="60" height="40">
+          <img src="../images/Amex.svg" alt="" width="60" height="40">
+        </div>
+      </div>
+      <div class="footer__row--2">
+        <div class="badges">
+          <a href="#"><img src="../images/appstore-badge.svg" alt=""></a>
+          <a href="#"><img src="../images/google-store-badge.svg" alt=""></a>
+        </div>
+        <div><img src="../images/cont.jpg" alt=""></div>
+        <div>
+          <form class="footer__form">
+            <div class="input__wrapper">
+              <input name="Email" type="email" id="f-email" class="form__input" autocomplete="off" placeholder=" ">
+              <label for="f-email" class="form__label">Email address</label>
+            </div>
+
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__row--end">
+        <div class="links">
+          <a href="#">Privacy Policy</a><span>|</span><a href="#">Terms and Conditions</a><span>|</span><a
+            href="#">Terms of Service</a>
+        </div>
+        <div>
+          <p>© 2021 CityCrop. All rights reserved</p>
+        </div>
+        <div>
+          <ul class="social-nav">
+            <li>
+              <a href="#" target="_blank" title="Facebook" rel="nofollow"><img src="../images/facebook.svg" alt=""></a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">How it works</a>
+            <li>
+              <a href="#" target="_blank" title="Twitter" rel="nofollow"><img src="../images/twitter.svg" alt=""></a>
             </li>
-            <li class="nav-item">
-              <a href="./faq.html" class="nav-link">FAQ</a>
+            <li>
+              <a href="#" target="_blank" title="Youtube" rel="nofollow"><img src="../images/youtube.svg" alt=""></a>
             </li>
-            <li class="nav-item">
-              <a href="./plants-showroom.html" class="nav-link active">Plant Showroom</a>
+            <li>
+              <a href="#" target="_blank" title="Linkedin" rel="nofollow"><img src="../images/linkedin.svg" alt=""></a>
             </li>
-            <li class="nav-item">
-              <a href="./about.html" class="nav-link">About us</a>
-            </li>
-            <li class="nav-item">
-              <a href="./contact.html" class="nav-link">Contact</a>
+            <li>
+              <a href="#" target="_blank" title="Instagram" rel="nofollow"><img src="../images/instagram.svg"
+                  alt=""></a>
             </li>
           </ul>
-          <a href="./shop.html" class="btn shopping__button">
-            <span><img src="../images/cart.svg" alt="" width="24" height="21" /></span>
-            <span>Shop</span>
-          </a>
-          <a href="./shop.html" class="shop-btn--mobile"><img src="../images/buy.svg" alt="" /></a>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <div class="breadcrumb container">
-        <a href="./recipes.html">Back to all recipes</a>
-      </div>
-      <section class="recipe__details">
-        <div class="container">
-          <h2 class="recipe__title">Crispy potato salad with herbaceous Watercress cream</h2>
-          <p class="subhead recipe__desc">
-            Are you Team potato salad with mayo or vinegar/oil? We have a completely different idea! How about crispy potatoes combined with Watercress for an
-            extra spicy touch?
-          </p>
-          <div class="recipe__img">
-            <picture>
-              <source media="(max-width:768px)" srcset="../images/recipe-cover-1-mb.png" />
-              <img src="../images/recipe-cover-1.png" alt="" />
-            </picture>
-          </div>
-          <div class="recipe__ingredients">
-            <h3>Ingredients</h3>
-            <div class="ingredients">
-              <div class="ingredient__lists">
-                <div>
-                  <h4>For the potato salad:</h4>
-                  <ul>
-                    <li>500 g baby potatoes</li>
-                    <li>25 g chopped almonds</li>
-                    <li>8 radishes</li>
-                    <li>25 g chives</li>
-                    <li>10 g oregano</li>
-                    <li>3 tbsp olive oil</li>
-                    <li>2 tsp garlic powder</li>
-                    <li>Salt & pepper</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4>For the cream:</h4>
-                  <ul>
-                    <li>200 g cream cheese</li>
-                    <li>1 Seedbar Watercress</li>
-                    <li>1 lemon</li>
-                    <li>1 tsp dijon mustard</li>
-                  </ul>
-                </div>
-              </div>
-
-              <div class="info__card__wrapper">
-                <div class="info__card">
-                  <img src="../images/heat.svg" alt="" />
-                  <p>315 kkal</p>
-                </div>
-                <div class="info__card">
-                  <img src="../images/time.svg" alt="" />
-                  <p>40 min</p>
-                </div>
-                <div class="info__card">
-                  <img src="../images/part.svg" alt="" />
-                  <p>2 part</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="recipe__process">
-            <h3>Process</h3>
-            <div class="process">
-              <h4>Step 1:</h4>
-              <p>Preheat oven to 200°C (top and bottom heat). Wash baby potatoes and cut in half lengthwise. Wash oregano, dry and pluck leaves.</p>
-              <h4>Step 2:</h4>
-              <p>
-                Place baby potatoes on a baking tray covered with baking paper, drizzle with oil and season with salt, pepper, garlic powder as well as oregano.
-                Mix everything and roast for about 25 minutes.
-              </p>
-              <h4>Step 3:</h4>
-              <p>
-                In the meantime, cut lemon in half and squeeze juice. Harvest Watercress and chop coarsely. Set aside some cress for garnish. Wash and finely
-                chop the chives.
-              </p>
-              <h4>Step 4:</h4>
-              <p>Put cream cheese, lemon juice, Watercress and Dijon mustard in a blender and mix until creamy. Add salt and chives, mix and set aside.</p>
-              <h4>Step 5:</h4>
-              <p>Wash radishes and cut into thin slices. Roast almonds in a pan until golden brown.</p>
-              <h4>Step 6:</h4>
-              <p>
-                Spread cream cheese on a plate and serve with potatoes, Watercress and radishes. If desired, drizzle with a little olive oil, garnish with
-                toasted almond flakes and enjoy.
-              </p>
-            </div>
-            <p>Recipe provided by the cooking app KptnCook <a href="#" class="app__link">KptnCook</a></p>
-          </div>
-        </div>
-      </section>
-      <section>
-        <div class="container"></div>
-      </section>
-      <section class="experience">
-        <div class="container">
-          <div class="row">
-            <div class="col-6">
-              <h2>
-                Experience
-                <div></div>
-                our products live
-              </h2>
-              <p>Visit our distributors, experience, the variety of Seedbars and the CityCrop App in use.</p>
-              <button class="btn">Buy right now</button>
-            </div>
-            <div class="col-6"><img src="../images/experience-products-live.png" alt="" /></div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="address-payment">
-          <div class="flex gap-1">
-            <div class="office__address">
-              <p class="footer_title">Our office</p>
-              <div class="address">
-                <span><img src="../images/Greece.svg" alt="" /></span>
-                <p>Greece, Egg, 190 Syngrou Avenue, 176 71, Athens</p>
-              </div>
-            </div>
-            <div class="email__address">
-              <p class="footer_title">Our e-mail</p>
-              <p>info@citycrop.io</p>
-            </div>
-          </div>
-          <div class="payment__methods">
-            <img src="../images/ApplePay.svg" alt="" width="60" height="40" />
-            <img src="../images/GooglePay.svg" alt="" width="60" height="40" />
-            <img src="../images/Mastercard-Full.svg" alt="" width="60" height="40" />
-            <img src="../images/Paypal.svg" alt="" width="60" height="40" />
-            <img src="../images/Stripe.svg" alt="" width="60" height="40" />
-            <img src="../images/Visa-Classic.svg" alt="" width="60" height="40" />
-            <img src="../images/Amex.svg" alt="" width="60" height="40" />
-          </div>
-        </div>
-        <div class="footer__row--2">
-          <div class="badges">
-            <a href="#"><img src="../images/appstore-badge.svg" alt="" /></a>
-            <a href="#"><img src="../images/google-store-badge.svg" alt="" /></a>
-          </div>
-          <div><img src="../images/cont.jpg" alt="" /></div>
-          <div>
-            <form class="footer__form">
-              <div class="input__wrapper">
-                <input name="Email" type="email" id="f-email" class="form__input" autocomplete="off" placeholder=" " />
-                <label for="f-email" class="form__label">Email address</label>
-              </div>
-
-              <button type="submit" class="btn">Subscribe</button>
-            </form>
-          </div>
-        </div>
-        <div class="footer__row--end">
-          <div class="links">
-            <a href="#">Privacy Policy</a><span>|</span><a href="#">Terms and Conditions</a><span>|</span><a href="#">Terms of Service</a>
-          </div>
-          <div><p>© 2021 CityCrop. All rights reserved</p></div>
-          <div>
-            <ul class="social-nav">
-              <li>
-                <a href="#" target="_blank" title="Facebook" rel="nofollow"><img src="../images/facebook.svg" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" target="_blank" title="Twitter" rel="nofollow"><img src="../images/twitter.svg" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" target="_blank" title="Youtube" rel="nofollow"><img src="../images/youtube.svg" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" target="_blank" title="Linkedin" rel="nofollow"><img src="../images/linkedin.svg" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" target="_blank" title="Instagram" rel="nofollow"><img src="../images/instagram.svg" alt="" /></a>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
-    </footer>
-    <script src="../js/main.js"></script>
-  </body>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+
 </html>

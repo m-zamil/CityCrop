@@ -1,314 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FAQ | CityCrop</title>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 
-    <!-- Stylesheets-->
-    <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/faq.css" />
-  </head>
-  <body>
-    <header class="header">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ | CityCrop</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets-->
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/faq.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="/" class="nav-logo"><img src="../images/logo.svg" height="42" width="199" alt="City Crop logo"></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="/" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">How it works</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a href="./plants-showroom.html" class="nav-link">Plant Showroom</a>
+          </li>
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link">About us</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <a href="./shop.html" class="btn shopping__button">
+          <span><img src="../images/cart.svg" alt="" width="24" height="21"></span>
+          <span>Shop</span>
+        </a>
+        <a href="./shop.html" class="shop-btn--mobile"><img src="../images/buy.svg" alt=""></a>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="hero__banner">
+      <picture>
+        <source media="(max-width:768px)" srcset="../images/faq-banner-1.jpg">
+        <img src="../images/faq-banner-d.jpg" alt="" height="480">
+      </picture>
+    </div>
+    <section class="faq__section">
       <div class="container">
-        <nav class="navbar">
-          <a href="/" class="nav-logo"><img src="../images/logo.svg" height="42" width="199" alt="City Crop logo" /></a>
-          <ul class="nav-menu">
-            <li class="nav-item">
-              <a href="/" class="nav-link">Home</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">How it works</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link active">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a href="./plants-showroom.html" class="nav-link">Plant Showroom</a>
-            </li>
-            <li class="nav-item">
-              <a href="./about.html" class="nav-link">About us</a>
-            </li>
-            <li class="nav-item">
-              <a href="./contact.html" class="nav-link">Contact</a>
-            </li>
-          </ul>
-          <a href="./shop.html" class="btn shopping__button">
-            <span><img src="../images/cart.svg" alt="" width="24" height="21" /></span>
-            <span>Shop</span>
-          </a>
-          <a href="./shop.html" class="shop-btn--mobile"><img src="../images/buy.svg" alt="" /></a>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+        <h2>FAQ</h2>
+        <div class="faq__wrapper">
+          <div class="tab">
+            <a class="tablink" onclick="openTab(event, 'general')" id="defaultOpen">General questions</a>
+            <a class="tablink" onclick="openTab(event, 'shipping')">Shipping</a>
+            <a class="tablink" onclick="openTab(event, 'warranty')">Warranty</a>
+            <a class="slider" role="presentation"></a>
           </div>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section class="hero__banner">
-        <picture>
-          <source media="(max-width:768px)" srcset="../images/faq-banner-1.jpg" />
-          <img src="../images/faq-banner-d.jpg" alt="" height="480" />
-        </picture>
-      </section>
-      <section class="faq__section">
-        <div class="container">
-          <h2>FAQ</h2>
-          <div class="faq__wrapper">
-            <div class="tab">
-              <a class="tablink" onclick="openTab(event, 'general')" id="defaultOpen">General questions</a>
-              <a class="tablink" onclick="openTab(event, 'shipping')">Shipping</a>
-              <a class="tablink" onclick="openTab(event, 'warranty')">Warranty</a>
-              <a class="slider" role="presentation"></a>
+
+          <div id="general" class="tabcontent">
+            <button class="accordion">What is CityCrop?</button>
+            <div class="panel">
+              <p>
+                Knight Rider, a shadowy flight into the dangerous world of a man who does not exist. Michael Knight, a
+                young loner on a crusade to champion
+                the cause of the innocent, the helpless in a world of criminals who operate above the law.
+              </p>
             </div>
 
-            <div id="general" class="tabcontent">
-              <button class="accordion">What is CityCrop?</button>
-              <div class="panel">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
-
-              <button class="accordion">What is the size of CityCrop?</button>
-              <div class="panel">
-                <p>
-                  CityCrop One (H x W x D) 42.44cm x 47.17cm x 53.9cm | 16.7” x 18.57” x 21.22” Weight 30 kg, 66 lb CityCrop Twin (H x W x D) 84.66cm x 47.17cm
-                  x 53.9cm | 33.33” x 18.57” x 21.22” Weight 55 kg, 121 lb
-                </p>
-              </div>
-
-              <button class="accordion">Do I need an internet connection?</button>
-              <div class="panel">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
-              <button class="accordion">What kind of electrical outlet do I need?</button>
-              <div class="panel">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
-              <button class="accordion">How much electricity does the CityCrop One and CityCrop Twin use?</button>
-              <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-              </div>
-              <button class="accordion">Do I need any previous growing experience to use CityCrop?</button>
-              <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-              </div>
-              <button class="accordion">What can I grow?</button>
-              <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-              </div>
-              <button class="accordion">How many plants can I plant at the same time?</button>
-              <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-              </div>
-              <button class="accordion">How much food can I grow?</button>
-              <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-              </div>
-              <button class="accordion">Can I use my own seeds?e?</button>
-              <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-              </div>
-              <button class="accordion">Do you use pesticides or GMO seeds?</button>
-              <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-              </div>
-              <button class="accordion">How much water do the CityCrop One and the CityCrop Twin need?</button>
-              <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-              </div>
-              <button class="accordion">Where can I put the CityCrop One and the CityCrop Twin?</button>
-              <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-              </div>
-              <button class="accordion">What smartphone platforms do you support?</button>
-              <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
-              </div>
+            <button class="accordion">What is the size of CityCrop?</button>
+            <div class="panel">
+              <p>
+                CityCrop One (H x W x D) 42.44cm x 47.17cm x 53.9cm | 16.7” x 18.57” x 21.22” Weight 30 kg, 66 lb
+                CityCrop Twin (H x W x D) 84.66cm x 47.17cm
+                x 53.9cm | 33.33” x 18.57” x 21.22” Weight 55 kg, 121 lb
+              </p>
             </div>
 
-            <div id="shipping" class="tabcontent">
-              <button class="accordion">What is CityCrop?</button>
-              <div class="panel">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
+            <button class="accordion">Do I need an internet connection?</button>
+            <div class="panel">
+              <p>
+                Knight Rider, a shadowy flight into the dangerous world of a man who does not exist. Michael Knight, a
+                young loner on a crusade to champion
+                the cause of the innocent, the helpless in a world of criminals who operate above the law.
+              </p>
             </div>
+            <button class="accordion">What kind of electrical outlet do I need?</button>
+            <div class="panel">
+              <p>
+                Knight Rider, a shadowy flight into the dangerous world of a man who does not exist. Michael Knight, a
+                young loner on a crusade to champion
+                the cause of the innocent, the helpless in a world of criminals who operate above the law.
+              </p>
+            </div>
+            <button class="accordion">How much electricity does the CityCrop One and CityCrop Twin use?</button>
+            <div class="panel">
+              <p>Knight Rider, a shadowy flight into the dangerous world of a</p>
+            </div>
+            <button class="accordion">Do I need any previous growing experience to use CityCrop?</button>
+            <div class="panel">
+              <p>Knight Rider, a shadowy flight into the dangerous world of a</p>
+            </div>
+            <button class="accordion">What can I grow?</button>
+            <div class="panel">
+              <p>Knight Rider, a shadowy flight into the dangerous world of a</p>
+            </div>
+            <button class="accordion">How many plants can I plant at the same time?</button>
+            <div class="panel">
+              <p>Knight Rider, a shadowy flight into the dangerous world of a</p>
+            </div>
+            <button class="accordion">How much food can I grow?</button>
+            <div class="panel">
+              <p>Knight Rider, a shadowy flight into the dangerous world of a</p>
+            </div>
+            <button class="accordion">Can I use my own seeds?e?</button>
+            <div class="panel">
+              <p>Knight Rider, a shadowy flight into the dangerous world of a</p>
+            </div>
+            <button class="accordion">Do you use pesticides or GMO seeds?</button>
+            <div class="panel">
+              <p>Knight Rider, a shadowy flight into the dangerous world of a</p>
+            </div>
+            <button class="accordion">How much water do the CityCrop One and the CityCrop Twin need?</button>
+            <div class="panel">
+              <p>Knight Rider, a shadowy flight into the dangerous world of a</p>
+            </div>
+            <button class="accordion">Where can I put the CityCrop One and the CityCrop Twin?</button>
+            <div class="panel">
+              <p>Knight Rider, a shadowy flight into the dangerous world of a</p>
+            </div>
+            <button class="accordion">What smartphone platforms do you support?</button>
+            <div class="panel">
+              <p>Knight Rider, a shadowy flight into the dangerous world of a</p>
+            </div>
+          </div>
 
-            <div id="warranty" class="tabcontent">
-              <button class="accordion">What is CityCrop?</button>
-              <div class="panel">
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-              </div>
+          <div id="shipping" class="tabcontent">
+            <button class="accordion">What is CityCrop?</button>
+            <div class="panel">
+              <p>
+                Loremss ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+
+          <div id="warranty" class="tabcontent">
+            <button class="accordion">What is CityCrop?</button>
+            <div class="panel">
+              <p>
+                Loremss ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                et
+                dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="query">
-        <div class="container">
-          <h2>Didn’t find the answer to your question?</h2>
-          <form action="" class="query__form">
-            <div>
-              <div class="input__wrapper">
-                <input name="Name" type="text" id="name" class="form__input" autocomplete="off" placeholder=" " />
-                <label for="name" class="form__label">Name</label>
-              </div>
-              <div class="input__wrapper">
-                <input name="Email" type="email" id="email" class="form__input" autocomplete="off" placeholder=" " />
-                <label for="email" class="form__label">Email address</label>
-              </div>
+    <section class="query">
+      <div class="container">
+        <h2>Didn’t find the answer to your question?</h2>
+        <form action="/" class="query__form">
+          <div>
+            <div class="input__wrapper">
+              <input name="Name" type="text" id="name" class="form__input" autocomplete="off" placeholder=" ">
+              <label for="name" class="form__label">Name</label>
             </div>
             <div class="input__wrapper">
-              <input name="Question" type="text" id="question" class="form__input" autocomplete="off" placeholder=" " />
-              <label for="question" class="form__label">Type your question</label>
-            </div>
-            <button type="submit" class="btn">Submit</button>
-          </form>
-        </div>
-      </section>
-
-      <section class="footer__banner">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2>
-                Are you ready <br />
-                to start?
-              </h2>
-            </div>
-            <div class="col">
-              <p>Explore our wide variety of over 60 different fresh produce at home, indoors.</p>
-              <a href="./shop.html" class="btn btn--secondary buy-now">Buy right now</a>
+              <input name="Email" type="email" id="email" class="form__input" autocomplete="off" placeholder=" ">
+              <label for="email" class="form__label">Email address</label>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
+          <div class="input__wrapper">
+            <input name="Question" type="text" id="question" class="form__input" autocomplete="off" placeholder=" ">
+            <label for="question" class="form__label">Type your question</label>
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="footer__banner">
       <div class="container">
-        <div class="address-payment">
-          <div class="flex gap-1">
-            <div class="office__address">
-              <p class="footer_title">Our office</p>
-              <div class="address">
-                <span><img src="../images/Greece.svg" alt="" /></span>
-                <p>Greece, Egg, 190 Syngrou Avenue, 176 71, Athens</p>
-              </div>
-            </div>
-            <div class="email__address">
-              <p class="footer_title">Our e-mail</p>
-              <p>info@citycrop.io</p>
-            </div>
+        <div class="row">
+          <div class="col">
+            <h2>
+              Are you ready <br>
+              to start?
+            </h2>
           </div>
-          <div class="payment__methods">
-            <img src="../images/ApplePay.svg" alt="" width="60" height="40" />
-            <img src="../images/GooglePay.svg" alt="" width="60" height="40" />
-            <img src="../images/Mastercard-Full.svg" alt="" width="60" height="40" />
-            <img src="../images/Paypal.svg" alt="" width="60" height="40" />
-            <img src="../images/Stripe.svg" alt="" width="60" height="40" />
-            <img src="../images/Visa-Classic.svg" alt="" width="60" height="40" />
-            <img src="../images/Amex.svg" alt="" width="60" height="40" />
-          </div>
-        </div>
-        <div class="footer__row--2">
-          <div class="badges">
-            <a href="#"><img src="../images/appstore-badge.svg" alt="" /></a>
-            <a href="#"><img src="../images/google-store-badge.svg" alt="" /></a>
-          </div>
-          <div><img src="../images/cont.jpg" alt="" /></div>
-          <div>
-            <form class="footer__form">
-              <div class="input__wrapper">
-                <input name="Email" type="email" id="f-email" class="form__input" autocomplete="off" placeholder=" " />
-                <label for="f-email" class="form__label">Email address</label>
-              </div>
-
-              <button type="submit" class="btn">Subscribe</button>
-            </form>
-          </div>
-        </div>
-        <div class="footer__row--end">
-          <div class="links">
-            <a href="#">Privacy Policy</a><span>|</span><a href="#">Terms and Conditions</a><span>|</span><a href="#">Terms of Service</a>
-          </div>
-          <div><p>© 2021 CityCrop. All rights reserved</p></div>
-          <div>
-            <ul class="social-nav">
-              <li>
-                <a href="#" target="_blank" title="Facebook" rel="nofollow"><img src="../images/facebook.svg" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" target="_blank" title="Twitter" rel="nofollow"><img src="../images/twitter.svg" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" target="_blank" title="Youtube" rel="nofollow"><img src="../images/youtube.svg" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" target="_blank" title="Linkedin" rel="nofollow"><img src="../images/linkedin.svg" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" target="_blank" title="Instagram" rel="nofollow"><img src="../images/instagram.svg" alt="" /></a>
-              </li>
-            </ul>
+          <div class="col">
+            <p>Explore our wide variety of over 60 different fresh produce at home, indoors.</p>
+            <a href="./shop.html" class="btn btn--secondary buy-now">Buy right now</a>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="address-payment">
+        <div class="flex gap-1">
+          <div class="office__address">
+            <p class="footer_title">Our office</p>
+            <div class="address">
+              <span><img src="../images/Greece.svg" alt=""></span>
+              <p>Greece, Egg, 190 Syngrou Avenue, 176 71, Athens</p>
+            </div>
+          </div>
+          <div class="email__address">
+            <p class="footer_title">Our e-mail</p>
+            <p>info@citycrop.io</p>
+          </div>
+        </div>
+        <div class="payment__methods">
+          <img src="../images/ApplePay.svg" alt="" width="60" height="40">
+          <img src="../images/GooglePay.svg" alt="" width="60" height="40">
+          <img src="../images/Mastercard-Full.svg" alt="" width="60" height="40">
+          <img src="../images/Paypal.svg" alt="" width="60" height="40">
+          <img src="../images/Stripe.svg" alt="" width="60" height="40">
+          <img src="../images/Visa-Classic.svg" alt="" width="60" height="40">
+          <img src="../images/Amex.svg" alt="" width="60" height="40">
+        </div>
+      </div>
+      <div class="footer__row--2">
+        <div class="badges">
+          <a href="#"><img src="../images/appstore-badge.svg" alt=""></a>
+          <a href="#"><img src="../images/google-store-badge.svg" alt=""></a>
+        </div>
+        <div><img src="../images/cont.jpg" alt=""></div>
+        <div>
+          <form class="footer__form">
+            <div class="input__wrapper">
+              <input name="Email" type="email" id="f-email" class="form__input" autocomplete="off" placeholder=" ">
+              <label for="f-email" class="form__label">Email address</label>
+            </div>
 
-    <script src="../js/main.js"></script>
-    <script>
-      function openTab(evt, tabName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName('tabcontent');
-        for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = 'none';
-        }
-        tablinks = document.getElementsByClassName('tablink');
-        for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(' active', '');
-        }
-        document.getElementById(tabName).style.display = 'block';
-        evt.currentTarget.className += ' active';
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__row--end">
+        <div class="links">
+          <a href="#">Privacy Policy</a><span>|</span><a href="#">Terms and Conditions</a><span>|</span><a
+            href="#">Terms of Service</a>
+        </div>
+        <div>
+          <p>© 2021 CityCrop. All rights reserved</p>
+        </div>
+        <div>
+          <ul class="social-nav">
+            <li>
+              <a href="#" target="_blank" title="Facebook" rel="nofollow"><img src="../images/facebook.svg" alt=""></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" title="Twitter" rel="nofollow"><img src="../images/twitter.svg" alt=""></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" title="Youtube" rel="nofollow"><img src="../images/youtube.svg" alt=""></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" title="Linkedin" rel="nofollow"><img src="../images/linkedin.svg" alt=""></a>
+            </li>
+            <li>
+              <a href="#" target="_blank" title="Instagram" rel="nofollow"><img src="../images/instagram.svg"
+                  alt=""></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName('tabcontent');
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = 'none';
       }
-      document.getElementById('defaultOpen').click();
-
-      //Accordion Script
-      var acc = document.getElementsByClassName('accordion');
-      var i;
-
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener('click', function () {
-          this.classList.toggle('active');
-          var panel = this.nextElementSibling;
-          if (panel.style.maxHeight) {
-            panel.style.maxHeight = null;
-          } else {
-            panel.style.maxHeight = panel.scrollHeight + 'px';
-          }
-        });
+      tablinks = document.getElementsByClassName('tablink');
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(' active', '');
       }
-    </script>
-  </body>
+      document.getElementById(tabName).style.display = 'block';
+      evt.currentTarget.className += ' active';
+    }
+    document.getElementById('defaultOpen').click();
+
+    //Accordion Script
+    var acc = document.getElementsByClassName('accordion');
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener('click', function () {
+        this.classList.toggle('active');
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + 'px';
+        }
+      });
+    }
+  </script>
+</body>
+
 </html>

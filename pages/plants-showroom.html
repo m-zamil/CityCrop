@@ -1,696 +1,705 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Plants showroom | CityCrop</title>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 
-    <!-- Stylesheets-->
-    <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/plants-showroom.css" />
-  </head>
-  <body>
-    <header class="header">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plants showroom | CityCrop</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets-->
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/plants-showroom.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="/" class="nav-logo"><img src="../images/logo.svg" height="42" width="199" alt="City Crop logo"></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="/" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">How it works</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link active">Plant Showroom</a>
+          </li>
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link">About us</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <a href="./shop.html" class="btn shopping__button">
+          <span><img src="../images/cart.svg" alt="" width="24" height="21"></span>
+          <span>Shop</span>
+        </a>
+        <a href="./shop.html" class="shop-btn--mobile"><img src="../images/buy.svg" alt=""></a>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="hero__banner">
+      <picture>
+        <source media="(max-width:768px)" srcset="../images/faq-banner-1.jpg">
+        <img src="../images/faq-banner-d.jpg" alt="" height="480">
+      </picture>
+    </div>
+    <section class="intro-content">
       <div class="container">
-        <nav class="navbar">
-          <a href="/" class="nav-logo"><img src="../images/logo.svg" height="42" width="199" alt="City Crop logo" /></a>
-          <ul class="nav-menu">
-            <li class="nav-item">
-              <a href="/" class="nav-link">Home</a>
+        <h2>Plant showroom</h2>
+        <p class="subhead">
+          Grow with CityCrop your favorite leafy greens, herbs, microgreens, lettuces, and even exotic plants. We ensure
+          that we have developed every seed we
+          provide in the order for you to have the best growing experience.
+        </p>
+      </div>
+    </section>
+    <div class="products__section">
+      <div class="container">
+        <div class="product__filters">
+          <div class="filter-mobile">Filter plants</div>
+          <div class="filter-bar">
+            <div class="dropdown">
+              <button class="dropbtn">
+                Nutrients
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7" fill="none">
+                    <path id="dropbtn-icon"
+                      d="M9.70711 1.70711C10.0976 1.31658 10.0976 0.683417 9.70711 0.292893C9.31658 -0.0976313 8.68342 -0.0976313 8.29289 0.292893L9.70711 1.70711ZM5 5L4.29289 5.70711L5 6.41421L5.70711 5.70711L5 5ZM1.70711 0.292893C1.31658 -0.097631 0.683417 -0.097631 0.292893 0.292893C-0.0976313 0.683417 -0.0976313 1.31658 0.292893 1.70711L1.70711 0.292893ZM8.29289 0.292893L4.29289 4.29289L5.70711 5.70711L9.70711 1.70711L8.29289 0.292893ZM5.70711 4.29289L1.70711 0.292893L0.292893 1.70711L4.29289 5.70711L5.70711 4.29289Z"
+                      fill="#0D0D0D"></path>
+                  </svg>
+                </span>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">All</a>
+                <a href="#">Microgreens</a>
+                <a href="#">Leafy Greens</a>
+                <a href="#">Exotic</a>
+                <a href="#">Herbs</a>
+                <a href="#">Lettuces</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">
+                Plant Type
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7" fill="none">
+                    <path
+                      d="M9.70711 1.70711C10.0976 1.31658 10.0976 0.683417 9.70711 0.292893C9.31658 -0.0976313 8.68342 -0.0976313 8.29289 0.292893L9.70711 1.70711ZM5 5L4.29289 5.70711L5 6.41421L5.70711 5.70711L5 5ZM1.70711 0.292893C1.31658 -0.097631 0.683417 -0.097631 0.292893 0.292893C-0.0976313 0.683417 -0.0976313 1.31658 0.292893 1.70711L1.70711 0.292893ZM8.29289 0.292893L4.29289 4.29289L5.70711 5.70711L9.70711 1.70711L8.29289 0.292893ZM5.70711 4.29289L1.70711 0.292893L0.292893 1.70711L4.29289 5.70711L5.70711 4.29289Z"
+                      fill="#0D0D0D"></path>
+                  </svg>
+                </span>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">All</a>
+                <a href="#">Microgreens</a>
+                <a href="#">Leafy Greens</a>
+                <a href="#">Exotic</a>
+                <a href="#">Herbs</a>
+                <a href="#">Lettuces</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">
+                Harvest Time
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7" fill="none">
+                    <path
+                      d="M9.70711 1.70711C10.0976 1.31658 10.0976 0.683417 9.70711 0.292893C9.31658 -0.0976313 8.68342 -0.0976313 8.29289 0.292893L9.70711 1.70711ZM5 5L4.29289 5.70711L5 6.41421L5.70711 5.70711L5 5ZM1.70711 0.292893C1.31658 -0.097631 0.683417 -0.097631 0.292893 0.292893C-0.0976313 0.683417 -0.0976313 1.31658 0.292893 1.70711L1.70711 0.292893ZM8.29289 0.292893L4.29289 4.29289L5.70711 5.70711L9.70711 1.70711L8.29289 0.292893ZM5.70711 4.29289L1.70711 0.292893L0.292893 1.70711L4.29289 5.70711L5.70711 4.29289Z"
+                      fill="#0D0D0D"></path>
+                  </svg>
+                </span>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">All</a>
+                <a href="#">Microgreens</a>
+                <a href="#">Leafy Greens</a>
+                <a href="#">Exotic</a>
+                <a href="#">Herbs</a>
+                <a href="#">Lettuces</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn">
+                Ideal for
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7" fill="none">
+                    <path
+                      d="M9.70711 1.70711C10.0976 1.31658 10.0976 0.683417 9.70711 0.292893C9.31658 -0.0976313 8.68342 -0.0976313 8.29289 0.292893L9.70711 1.70711ZM5 5L4.29289 5.70711L5 6.41421L5.70711 5.70711L5 5ZM1.70711 0.292893C1.31658 -0.097631 0.683417 -0.097631 0.292893 0.292893C-0.0976313 0.683417 -0.0976313 1.31658 0.292893 1.70711L1.70711 0.292893ZM8.29289 0.292893L4.29289 4.29289L5.70711 5.70711L9.70711 1.70711L8.29289 0.292893ZM5.70711 4.29289L1.70711 0.292893L0.292893 1.70711L4.29289 5.70711L5.70711 4.29289Z"
+                      fill="#0D0D0D"></path>
+                  </svg>
+                </span>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">All</a>
+                <a href="#">Microgreens</a>
+                <a href="#">Leafy Greens</a>
+                <a href="#">Exotic</a>
+                <a href="#">Herbs</a>
+                <a href="#">Lettuces</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="products__cards">
+          <div class="product__card">
+            <div class="detail-tag">
+              Details
+              <div class="details__popup">
+                <div class="close-icon">
+                  <img src="../images/close-icon.svg" alt="">
+                </div>
+                <div>
+                  <p>Green Sorrel</p>
+                  <p class="subname">Rumex acetosa</p>
+                </div>
+                <ul>
+                  <li>
+                    <div><img src="../images/flower.svg" alt=""></div>
+                    <div>
+                      <p>Germination Time</p>
+                      <p>4 Days</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div><img src="../images/flower-2.svg" alt=""></div>
+                    <div>
+                      <p>Harvest Time</p>
+                      <p>26 Days</p>
+                    </div>
+                  </li>
+                </ul>
+                <p>
+                  Small, edible green plant from the Polygonaceae family, same as buckwheat and rhubarb. Translating to
+                  “sour” in french, Sorrel has an
+                  intense lemony tang.
+                </p>
+              </div>
+            </div>
+            <img src="../images/Pak-Choi.png" alt="">
+            <p>Pak Choi</p>
+            <p class="harvest__time">Harvest in 21 days</p>
+            <div class="product__card__buy">
+              <p class="">€6,99</p>
+              <button class="btn">Add to cart</button>
+            </div>
+          </div>
+
+          <div class="product__card">
+            <div class="detail-tag">
+              Details
+              <div class="details__popup">
+                <div class="close-icon">
+                  <img src="../images/close-icon.svg" alt="">
+                </div>
+                <div>
+                  <p>Green Sorrel</p>
+                  <p class="subname">Rumex acetosa</p>
+                </div>
+                <ul>
+                  <li>
+                    <div><img src="../images/flower.svg" alt=""></div>
+                    <div>
+                      <p>Germination Time</p>
+                      <p>4 Days</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div><img src="../images/flower-2.svg" alt=""></div>
+                    <div>
+                      <p>Harvest Time</p>
+                      <p>26 Days</p>
+                    </div>
+                  </li>
+                </ul>
+                <p>
+                  Small, edible green plant from the Polygonaceae family, same as buckwheat and rhubarb. Translating to
+                  “sour” in french, Sorrel has an
+                  intense lemony tang.
+                </p>
+              </div>
+            </div>
+            <img src="../images/GreenSorrel.png" alt="">
+            <p>Green Sorrel</p>
+            <p class="harvest__time">Harvest in 26 days</p>
+            <div class="product__card__buy">
+              <p class="">€6,99</p>
+              <button class="btn">Add to cart</button>
+            </div>
+          </div>
+
+          <div class="product__card">
+            <div class="detail-tag">
+              Details
+              <div class="details__popup">
+                <div class="close-icon">
+                  <img src="../images/close-icon.svg" alt="">
+                </div>
+                <div>
+                  <p>Green Sorrel</p>
+                  <p class="subname">Rumex acetosa</p>
+                </div>
+                <ul>
+                  <li>
+                    <div><img src="../images/flower.svg" alt=""></div>
+                    <div>
+                      <p>Germination Time</p>
+                      <p>4 Days</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div><img src="../images/flower-2.svg" alt=""></div>
+                    <div>
+                      <p>Harvest Time</p>
+                      <p>26 Days</p>
+                    </div>
+                  </li>
+                </ul>
+                <p>
+                  Small, edible green plant from the Polygonaceae family, same as buckwheat and rhubarb. Translating to
+                  “sour” in french, Sorrel has an
+                  intense lemony tang.
+                </p>
+              </div>
+            </div>
+            <img src="../images/GreenSorrel.png" alt="">
+            <p>Green Sorrel</p>
+            <p class="harvest__time">Harvest in 26 days</p>
+            <div class="product__card__buy">
+              <p class="">€6,99</p>
+              <button class="btn">Add to cart</button>
+            </div>
+          </div>
+
+          <div class="product__card">
+            <div class="detail-tag">
+              Details
+              <div class="details__popup">
+                <div class="close-icon">
+                  <img src="../images/close-icon.svg" alt="">
+                </div>
+                <div>
+                  <p>Green Sorrel</p>
+                  <p class="subname">Rumex acetosa</p>
+                </div>
+                <ul>
+                  <li>
+                    <div><img src="../images/flower.svg" alt=""></div>
+                    <div>
+                      <p>Germination Time</p>
+                      <p>4 Days</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div><img src="../images/flower-2.svg" alt=""></div>
+                    <div>
+                      <p>Harvest Time</p>
+                      <p>26 Days</p>
+                    </div>
+                  </li>
+                </ul>
+                <p>
+                  Small, edible green plant from the Polygonaceae family, same as buckwheat and rhubarb. Translating to
+                  “sour” in french, Sorrel has an
+                  intense lemony tang.
+                </p>
+              </div>
+            </div>
+            <img src="../images/Upland-Cress.png" alt="">
+            <p>Upland Cress</p>
+            <p class="harvest__time">Harvest in 14 days</p>
+            <div class="product__card__buy">
+              <p class="">€6,99</p>
+              <button class="btn">Add to cart</button>
+            </div>
+          </div>
+          <div class="product__card">
+            <div class="detail-tag">
+              Details
+              <div class="details__popup">
+                <div class="close-icon">
+                  <img src="../images/close-icon.svg" alt="">
+                </div>
+                <div>
+                  <p>Green Sorrel</p>
+                  <p class="subname">Rumex acetosa</p>
+                </div>
+                <ul>
+                  <li>
+                    <div><img src="../images/flower.svg" alt=""></div>
+                    <div>
+                      <p>Germination Time</p>
+                      <p>4 Days</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div><img src="../images/flower-2.svg" alt=""></div>
+                    <div>
+                      <p>Harvest Time</p>
+                      <p>26 Days</p>
+                    </div>
+                  </li>
+                </ul>
+                <p>
+                  Small, edible green plant from the Polygonaceae family, same as buckwheat and rhubarb. Translating to
+                  “sour” in french, Sorrel has an
+                  intense lemony tang.
+                </p>
+              </div>
+            </div>
+            <img src="../images/Red-Sorrel.png" alt="">
+            <p>Red Sorrel</p>
+            <p class="harvest__time">Harvest in 26 days</p>
+            <div class="product__card__buy">
+              <p class="">€6,99</p>
+              <button class="btn">Add to cart</button>
+            </div>
+          </div>
+
+          <div class="product__card">
+            <div class="detail-tag">
+              Details
+              <div class="details__popup">
+                <div class="close-icon">
+                  <img src="../images/close-icon.svg" alt="">
+                </div>
+                <div>
+                  <p>Green Sorrel</p>
+                  <p class="subname">Rumex acetosa</p>
+                </div>
+                <ul>
+                  <li>
+                    <div><img src="../images/flower.svg" alt=""></div>
+                    <div>
+                      <p>Germination Time</p>
+                      <p>4 Days</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div><img src="../images/flower-2.svg" alt=""></div>
+                    <div>
+                      <p>Harvest Time</p>
+                      <p>26 Days</p>
+                    </div>
+                  </li>
+                </ul>
+                <p>
+                  Small, edible green plant from the Polygonaceae family, same as buckwheat and rhubarb. Translating to
+                  “sour” in french, Sorrel has an
+                  intense lemony tang.
+                </p>
+              </div>
+            </div>
+            <img src="../images/Mustard-Green-Fire.png" alt="">
+            <p>Mustard Green Fire</p>
+            <p class="harvest__time">Harvest in 15 days</p>
+            <div class="product__card__buy">
+              <p class="">€6,99</p>
+              <button class="btn">Add to cart</button>
+            </div>
+          </div>
+
+          <div class="product__card">
+            <div class="detail-tag">
+              Details
+              <div class="details__popup">
+                <div class="close-icon">
+                  <img src="../images/close-icon.svg" alt="">
+                </div>
+                <div>
+                  <p>Green Sorrel</p>
+                  <p class="subname">Rumex acetosa</p>
+                </div>
+                <ul>
+                  <li>
+                    <div><img src="../images/flower.svg" alt=""></div>
+                    <div>
+                      <p>Germination Time</p>
+                      <p>4 Days</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div><img src="../images/flower-2.svg" alt=""></div>
+                    <div>
+                      <p>Harvest Time</p>
+                      <p>26 Days</p>
+                    </div>
+                  </li>
+                </ul>
+                <p>
+                  Small, edible green plant from the Polygonaceae family, same as buckwheat and rhubarb. Translating to
+                  “sour” in french, Sorrel has an
+                  intense lemony tang.
+                </p>
+              </div>
+            </div>
+            <img src="../images/Mustard-Red-Lion.png" alt="">
+            <p>Mustard Red Lion</p>
+            <p class="harvest__time">Harvest in 15 days</p>
+            <div class="product__card__buy">
+              <p class="">€6,99</p>
+              <button class="btn">Add to cart</button>
+            </div>
+          </div>
+
+          <div class="product__card">
+            <div class="detail-tag">
+              Details
+              <div class="details__popup">
+                <div class="close-icon">
+                  <img src="../images/close-icon.svg" alt="">
+                </div>
+                <div>
+                  <p>Green Sorrel</p>
+                  <p class="subname">Rumex acetosa</p>
+                </div>
+                <ul>
+                  <li>
+                    <div><img src="../images/flower.svg" alt=""></div>
+                    <div>
+                      <p>Germination Time</p>
+                      <p>4 Days</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div><img src="../images/flower-2.svg" alt=""></div>
+                    <div>
+                      <p>Harvest Time</p>
+                      <p>26 Days</p>
+                    </div>
+                  </li>
+                </ul>
+                <p>
+                  Small, edible green plant from the Polygonaceae family, same as buckwheat and rhubarb. Translating to
+                  “sour” in french, Sorrel has an
+                  intense lemony tang.
+                </p>
+              </div>
+            </div>
+            <img src="../images/Kale-Scarlet.png" alt="">
+            <p>Kale Scarlet</p>
+            <p class="harvest__time">Harvest in 15 days</p>
+            <div class="product__card__buy">
+              <p class="">€6,99</p>
+              <button class="btn">Add to cart</button>
+            </div>
+          </div>
+
+          <div class="product__card">
+            <div class="detail-tag">
+              Details
+              <div class="details__popup">
+                <div class="close-icon">
+                  <img src="../images/close-icon.svg" alt="">
+                </div>
+                <div>
+                  <p>Green Sorrel</p>
+                  <p class="subname">Rumex acetosa</p>
+                </div>
+                <ul>
+                  <li>
+                    <div><img src="../images/flower.svg" alt=""></div>
+                    <div>
+                      <p>Germination Time</p>
+                      <p>4 Days</p>
+                    </div>
+                  </li>
+                  <li>
+                    <div><img src="../images/flower-2.svg" alt=""></div>
+                    <div>
+                      <p>Harvest Time</p>
+                      <p>26 Days</p>
+                    </div>
+                  </li>
+                </ul>
+                <p>
+                  Small, edible green plant from the Polygonaceae family, same as buckwheat and rhubarb. Translating to
+                  “sour” in french, Sorrel has an
+                  intense lemony tang.
+                </p>
+              </div>
+            </div>
+            <img src="../images/Kale-Scarlet.png" alt="">
+            <p>Frisee</p>
+            <p class="harvest__time">Harvest in 17 days</p>
+            <div class="product__card__buy">
+              <p class="">€6,99</p>
+              <button class="btn">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="products__footer">
+          <div class="filter__results">Results: 1-9 of 48</div>
+          <div class="pagination__btns">
+            <a class="icon-prev disabled">
+              <img src="../images/arrow-prev.svg" alt="">
+            </a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a class="icon-next">
+              <img src="../images/arrow-next.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="footer__banner">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>
+              Are you ready <br>
+              to start?
+            </h2>
+          </div>
+          <div class="col">
+            <p>Explore our wide variety of over 60 different fresh produce at home, indoors.</p>
+            <a href="./shop.html" class="btn btn--secondary buy-now">Buy right now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="address-payment">
+        <div class="flex gap-1">
+          <div class="office__address">
+            <p class="footer_title">Our office</p>
+            <div class="address">
+              <span><img src="../images/Greece.svg" alt=""></span>
+              <p>Greece, Egg, 190 Syngrou Avenue, 176 71, Athens</p>
+            </div>
+          </div>
+          <div class="email__address">
+            <p class="footer_title">Our e-mail</p>
+            <p>info@citycrop.io</p>
+          </div>
+        </div>
+        <div class="payment__methods">
+          <img src="../images/ApplePay.svg" alt="" width="60" height="40">
+          <img src="../images/GooglePay.svg" alt="" width="60" height="40">
+          <img src="../images/Mastercard-Full.svg" alt="" width="60" height="40">
+          <img src="../images/Paypal.svg" alt="" width="60" height="40">
+          <img src="../images/Stripe.svg" alt="" width="60" height="40">
+          <img src="../images/Visa-Classic.svg" alt="" width="60" height="40">
+          <img src="../images/Amex.svg" alt="" width="60" height="40">
+        </div>
+      </div>
+      <div class="footer__row--2">
+        <div class="badges">
+          <a href="#"><img src="../images/appstore-badge.svg" alt=""></a>
+          <a href="#"><img src="../images/google-store-badge.svg" alt=""></a>
+        </div>
+        <div><img src="../images/cont.jpg" alt=""></div>
+        <div>
+          <form class="footer__form">
+            <div class="input__wrapper">
+              <input name="Email" type="email" id="f-email" class="form__input" autocomplete="off" placeholder=" ">
+              <label for="f-email" class="form__label">Email address</label>
+            </div>
+
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__row--end">
+        <div class="links">
+          <a href="#">Privacy Policy</a><span>|</span><a href="#">Terms and Conditions</a><span>|</span><a
+            href="#">Terms of Service</a>
+        </div>
+        <div>
+          <p>© 2021 CityCrop. All rights reserved</p>
+        </div>
+        <div>
+          <ul class="social-nav">
+            <li>
+              <a href="#" target="_blank" title="Facebook" rel="nofollow"><img src="../images/facebook.svg" alt=""></a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">How it works</a>
+            <li>
+              <a href="#" target="_blank" title="Twitter" rel="nofollow"><img src="../images/twitter.svg" alt=""></a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">FAQ</a>
+            <li>
+              <a href="#" target="_blank" title="Youtube" rel="nofollow"><img src="../images/youtube.svg" alt=""></a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link active">Plant Showroom</a>
+            <li>
+              <a href="#" target="_blank" title="Linkedin" rel="nofollow"><img src="../images/linkedin.svg" alt=""></a>
             </li>
-            <li class="nav-item">
-              <a href="./about.html" class="nav-link">About us</a>
-            </li>
-            <li class="nav-item">
-              <a href="./contact.html" class="nav-link">Contact</a>
+            <li>
+              <a href="#" target="_blank" title="Instagram" rel="nofollow"><img src="../images/instagram.svg"
+                  alt=""></a>
             </li>
           </ul>
-          <a href="./shop.html" class="btn shopping__button">
-            <span><img src="../images/cart.svg" alt="" width="24" height="21" /></span>
-            <span>Shop</span>
-          </a>
-          <a href="./shop.html" class="shop-btn--mobile"><img src="../images/buy.svg" alt="" /></a>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section class="hero__banner">
-        <picture>
-          <source media="(max-width:768px)" srcset="../images/faq-banner-1.jpg" />
-          <img src="../images/faq-banner-d.jpg" alt="" height="480" />
-        </picture>
-      </section>
-      <section class="intro-content">
-        <div class="container">
-          <h2>Plant showroom</h2>
-          <p class="subhead">
-            Grow with CityCrop your favorite leafy greens, herbs, microgreens, lettuces, and even exotic plants. We ensure that we have developed every seed we
-            provide in the order for you to have the best growing experience.
-          </p>
-        </div>
-      </section>
-      <section class="products__section">
-        <div class="container">
-          <div class="product__filters">
-            <div class="filter-mobile">Filter plants</div>
-            <div class="filter-bar">
-              <div class="dropdown">
-                <button class="dropbtn">
-                  Nutrients
-                  <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7" fill="none">
-                      <path
-                        id="dropbtn-icon"
-                        d="M9.70711 1.70711C10.0976 1.31658 10.0976 0.683417 9.70711 0.292893C9.31658 -0.0976313 8.68342 -0.0976313 8.29289 0.292893L9.70711 1.70711ZM5 5L4.29289 5.70711L5 6.41421L5.70711 5.70711L5 5ZM1.70711 0.292893C1.31658 -0.097631 0.683417 -0.097631 0.292893 0.292893C-0.0976313 0.683417 -0.0976313 1.31658 0.292893 1.70711L1.70711 0.292893ZM8.29289 0.292893L4.29289 4.29289L5.70711 5.70711L9.70711 1.70711L8.29289 0.292893ZM5.70711 4.29289L1.70711 0.292893L0.292893 1.70711L4.29289 5.70711L5.70711 4.29289Z"
-                        fill="#0D0D0D"
-                      />
-                    </svg>
-                  </span>
-                </button>
-                <div class="dropdown-content">
-                  <a href="#">All</a>
-                  <a href="#">Microgreens</a>
-                  <a href="#">Leafy Greens</a>
-                  <a href="#">Exotic</a>
-                  <a href="#">Herbs</a>
-                  <a href="#">Lettuces</a>
-                </div>
-              </div>
-              <div class="dropdown">
-                <button class="dropbtn">
-                  Plant Type
-                  <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7" fill="none">
-                      <path
-                        id="dropbtn-icon"
-                        d="M9.70711 1.70711C10.0976 1.31658 10.0976 0.683417 9.70711 0.292893C9.31658 -0.0976313 8.68342 -0.0976313 8.29289 0.292893L9.70711 1.70711ZM5 5L4.29289 5.70711L5 6.41421L5.70711 5.70711L5 5ZM1.70711 0.292893C1.31658 -0.097631 0.683417 -0.097631 0.292893 0.292893C-0.0976313 0.683417 -0.0976313 1.31658 0.292893 1.70711L1.70711 0.292893ZM8.29289 0.292893L4.29289 4.29289L5.70711 5.70711L9.70711 1.70711L8.29289 0.292893ZM5.70711 4.29289L1.70711 0.292893L0.292893 1.70711L4.29289 5.70711L5.70711 4.29289Z"
-                        fill="#0D0D0D"
-                      />
-                    </svg>
-                  </span>
-                </button>
-                <div class="dropdown-content">
-                  <a href="#">All</a>
-                  <a href="#">Microgreens</a>
-                  <a href="#">Leafy Greens</a>
-                  <a href="#">Exotic</a>
-                  <a href="#">Herbs</a>
-                  <a href="#">Lettuces</a>
-                </div>
-              </div>
-              <div class="dropdown">
-                <button class="dropbtn">
-                  Harvest Time
-                  <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7" fill="none">
-                      <path
-                        id="dropbtn-icon"
-                        d="M9.70711 1.70711C10.0976 1.31658 10.0976 0.683417 9.70711 0.292893C9.31658 -0.0976313 8.68342 -0.0976313 8.29289 0.292893L9.70711 1.70711ZM5 5L4.29289 5.70711L5 6.41421L5.70711 5.70711L5 5ZM1.70711 0.292893C1.31658 -0.097631 0.683417 -0.097631 0.292893 0.292893C-0.0976313 0.683417 -0.0976313 1.31658 0.292893 1.70711L1.70711 0.292893ZM8.29289 0.292893L4.29289 4.29289L5.70711 5.70711L9.70711 1.70711L8.29289 0.292893ZM5.70711 4.29289L1.70711 0.292893L0.292893 1.70711L4.29289 5.70711L5.70711 4.29289Z"
-                        fill="#0D0D0D"
-                      />
-                    </svg>
-                  </span>
-                </button>
-                <div class="dropdown-content">
-                  <a href="#">All</a>
-                  <a href="#">Microgreens</a>
-                  <a href="#">Leafy Greens</a>
-                  <a href="#">Exotic</a>
-                  <a href="#">Herbs</a>
-                  <a href="#">Lettuces</a>
-                </div>
-              </div>
-              <div class="dropdown">
-                <button class="dropbtn">
-                  Ideal for
-                  <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="10" height="7" viewBox="0 0 10 7" fill="none">
-                      <path
-                        id="dropbtn-icon"
-                        d="M9.70711 1.70711C10.0976 1.31658 10.0976 0.683417 9.70711 0.292893C9.31658 -0.0976313 8.68342 -0.0976313 8.29289 0.292893L9.70711 1.70711ZM5 5L4.29289 5.70711L5 6.41421L5.70711 5.70711L5 5ZM1.70711 0.292893C1.31658 -0.097631 0.683417 -0.097631 0.292893 0.292893C-0.0976313 0.683417 -0.0976313 1.31658 0.292893 1.70711L1.70711 0.292893ZM8.29289 0.292893L4.29289 4.29289L5.70711 5.70711L9.70711 1.70711L8.29289 0.292893ZM5.70711 4.29289L1.70711 0.292893L0.292893 1.70711L4.29289 5.70711L5.70711 4.29289Z"
-                        fill="#0D0D0D"
-                      />
-                    </svg>
-                  </span>
-                </button>
-                <div class="dropdown-content">
-                  <a href="#">All</a>
-                  <a href="#">Microgreens</a>
-                  <a href="#">Leafy Greens</a>
-                  <a href="#">Exotic</a>
-                  <a href="#">Herbs</a>
-                  <a href="#">Lettuces</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="products__cards">
-            <div class="product__card">
-              <div class="detail-tag">
-                Details
-                <div class="details__popup">
-                  <div class="close-icon">
-                    <img src="../images/close-icon.svg" alt="" />
-                  </div>
-                  <div>
-                    <p>Green Sorrel</p>
-                    <p class="subname">Rumex acetosa</p>
-                  </div>
-                  <ul>
-                    <li>
-                      <div><img src="../images/flower.svg" alt="" /></div>
-                      <div>
-                        <p>Germination Time</p>
-                        <p>4 Days</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div><img src="../images/flower-2.svg" alt="" /></div>
-                      <div>
-                        <p>Harvest Time</p>
-                        <p>26 Days</p>
-                      </div>
-                    </li>
-                  </ul>
-                  <p>
-                    Small, edible green plant from the Polygonaceae family, same as buckwheat and rhubarb. Translating to “sour” in french, Sorrel has an
-                    intense lemony tang.
-                  </p>
-                </div>
-              </div>
-              <img src="../images/Pak-Choi.png" alt="" />
-              <p>Pak Choi</p>
-              <p class="harvest__time">Harvest in 21 days</p>
-              <div class="product__card__buy">
-                <p class="">€6,99</p>
-                <button class="btn">Add to cart</button>
-              </div>
-            </div>
-
-            <div class="product__card">
-              <div class="detail-tag">
-                Details
-                <div class="details__popup">
-                  <div class="close-icon">
-                    <img src="../images/close-icon.svg" alt="" />
-                  </div>
-                  <div>
-                    <p>Green Sorrel</p>
-                    <p class="subname">Rumex acetosa</p>
-                  </div>
-                  <ul>
-                    <li>
-                      <div><img src="../images/flower.svg" alt="" /></div>
-                      <div>
-                        <p>Germination Time</p>
-                        <p>4 Days</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div><img src="../images/flower-2.svg" alt="" /></div>
-                      <div>
-                        <p>Harvest Time</p>
-                        <p>26 Days</p>
-                      </div>
-                    </li>
-                  </ul>
-                  <p>
-                    Small, edible green plant from the Polygonaceae family, same as buckwheat and rhubarb. Translating to “sour” in french, Sorrel has an
-                    intense lemony tang.
-                  </p>
-                </div>
-              </div>
-              <img src="../images/GreenSorrel.png" alt="" />
-              <p>Green Sorrel</p>
-              <p class="harvest__time">Harvest in 26 days</p>
-              <div class="product__card__buy">
-                <p class="">€6,99</p>
-                <button class="btn">Add to cart</button>
-              </div>
-            </div>
-
-            <div class="product__card">
-              <div class="detail-tag">
-                Details
-                <div class="details__popup">
-                  <div class="close-icon">
-                    <img src="../images/close-icon.svg" alt="" />
-                  </div>
-                  <div>
-                    <p>Green Sorrel</p>
-                    <p class="subname">Rumex acetosa</p>
-                  </div>
-                  <ul>
-                    <li>
-                      <div><img src="../images/flower.svg" alt="" /></div>
-                      <div>
-                        <p>Germination Time</p>
-                        <p>4 Days</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div><img src="../images/flower-2.svg" alt="" /></div>
-                      <div>
-                        <p>Harvest Time</p>
-                        <p>26 Days</p>
-                      </div>
-                    </li>
-                  </ul>
-                  <p>
-                    Small, edible green plant from the Polygonaceae family, same as buckwheat and rhubarb. Translating to “sour” in french, Sorrel has an
-                    intense lemony tang.
-                  </p>
-                </div>
-              </div>
-              <img src="../images/GreenSorrel.png" alt="" />
-              <p>Green Sorrel</p>
-              <p class="harvest__time">Harvest in 26 days</p>
-              <div class="product__card__buy">
-                <p class="">€6,99</p>
-                <button class="btn">Add to cart</button>
-              </div>
-            </div>
-
-            <div class="product__card">
-              <div class="detail-tag">
-                Details
-                <div class="details__popup">
-                  <div class="close-icon">
-                    <img src="../images/close-icon.svg" alt="" />
-                  </div>
-                  <div>
-                    <p>Green Sorrel</p>
-                    <p class="subname">Rumex acetosa</p>
-                  </div>
-                  <ul>
-                    <li>
-                      <div><img src="../images/flower.svg" alt="" /></div>
-                      <div>
-                        <p>Germination Time</p>
-                        <p>4 Days</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div><img src="../images/flower-2.svg" alt="" /></div>
-                      <div>
-                        <p>Harvest Time</p>
-                        <p>26 Days</p>
-                      </div>
-                    </li>
-                  </ul>
-                  <p>
-                    Small, edible green plant from the Polygonaceae family, same as buckwheat and rhubarb. Translating to “sour” in french, Sorrel has an
-                    intense lemony tang.
-                  </p>
-                </div>
-              </div>
-              <img src="../images/Upland-Cress.png" alt="" />
-              <p>Upland Cress</p>
-              <p class="harvest__time">Harvest in 14 days</p>
-              <div class="product__card__buy">
-                <p class="">€6,99</p>
-                <button class="btn">Add to cart</button>
-              </div>
-            </div>
-            <div class="product__card">
-              <div class="detail-tag">
-                Details
-                <div class="details__popup">
-                  <div class="close-icon">
-                    <img src="../images/close-icon.svg" alt="" />
-                  </div>
-                  <div>
-                    <p>Green Sorrel</p>
-                    <p class="subname">Rumex acetosa</p>
-                  </div>
-                  <ul>
-                    <li>
-                      <div><img src="../images/flower.svg" alt="" /></div>
-                      <div>
-                        <p>Germination Time</p>
-                        <p>4 Days</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div><img src="../images/flower-2.svg" alt="" /></div>
-                      <div>
-                        <p>Harvest Time</p>
-                        <p>26 Days</p>
-                      </div>
-                    </li>
-                  </ul>
-                  <p>
-                    Small, edible green plant from the Polygonaceae family, same as buckwheat and rhubarb. Translating to “sour” in french, Sorrel has an
-                    intense lemony tang.
-                  </p>
-                </div>
-              </div>
-              <img src="../images/Red-Sorrel.png" alt="" />
-              <p>Red Sorrel</p>
-              <p class="harvest__time">Harvest in 26 days</p>
-              <div class="product__card__buy">
-                <p class="">€6,99</p>
-                <button class="btn">Add to cart</button>
-              </div>
-            </div>
-
-            <div class="product__card">
-              <div class="detail-tag">
-                Details
-                <div class="details__popup">
-                  <div class="close-icon">
-                    <img src="../images/close-icon.svg" alt="" />
-                  </div>
-                  <div>
-                    <p>Green Sorrel</p>
-                    <p class="subname">Rumex acetosa</p>
-                  </div>
-                  <ul>
-                    <li>
-                      <div><img src="../images/flower.svg" alt="" /></div>
-                      <div>
-                        <p>Germination Time</p>
-                        <p>4 Days</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div><img src="../images/flower-2.svg" alt="" /></div>
-                      <div>
-                        <p>Harvest Time</p>
-                        <p>26 Days</p>
-                      </div>
-                    </li>
-                  </ul>
-                  <p>
-                    Small, edible green plant from the Polygonaceae family, same as buckwheat and rhubarb. Translating to “sour” in french, Sorrel has an
-                    intense lemony tang.
-                  </p>
-                </div>
-              </div>
-              <img src="../images/Mustard-Green-Fire.png" alt="" />
-              <p>Mustard Green Fire</p>
-              <p class="harvest__time">Harvest in 15 days</p>
-              <div class="product__card__buy">
-                <p class="">€6,99</p>
-                <button class="btn">Add to cart</button>
-              </div>
-            </div>
-
-            <div class="product__card">
-              <div class="detail-tag">
-                Details
-                <div class="details__popup">
-                  <div class="close-icon">
-                    <img src="../images/close-icon.svg" alt="" />
-                  </div>
-                  <div>
-                    <p>Green Sorrel</p>
-                    <p class="subname">Rumex acetosa</p>
-                  </div>
-                  <ul>
-                    <li>
-                      <div><img src="../images/flower.svg" alt="" /></div>
-                      <div>
-                        <p>Germination Time</p>
-                        <p>4 Days</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div><img src="../images/flower-2.svg" alt="" /></div>
-                      <div>
-                        <p>Harvest Time</p>
-                        <p>26 Days</p>
-                      </div>
-                    </li>
-                  </ul>
-                  <p>
-                    Small, edible green plant from the Polygonaceae family, same as buckwheat and rhubarb. Translating to “sour” in french, Sorrel has an
-                    intense lemony tang.
-                  </p>
-                </div>
-              </div>
-              <img src="../images/Mustard-Red-Lion.png" alt="" />
-              <p>Mustard Red Lion</p>
-              <p class="harvest__time">Harvest in 15 days</p>
-              <div class="product__card__buy">
-                <p class="">€6,99</p>
-                <button class="btn">Add to cart</button>
-              </div>
-            </div>
-
-            <div class="product__card">
-              <div class="detail-tag">
-                Details
-                <div class="details__popup">
-                  <div class="close-icon">
-                    <img src="../images/close-icon.svg" alt="" />
-                  </div>
-                  <div>
-                    <p>Green Sorrel</p>
-                    <p class="subname">Rumex acetosa</p>
-                  </div>
-                  <ul>
-                    <li>
-                      <div><img src="../images/flower.svg" alt="" /></div>
-                      <div>
-                        <p>Germination Time</p>
-                        <p>4 Days</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div><img src="../images/flower-2.svg" alt="" /></div>
-                      <div>
-                        <p>Harvest Time</p>
-                        <p>26 Days</p>
-                      </div>
-                    </li>
-                  </ul>
-                  <p>
-                    Small, edible green plant from the Polygonaceae family, same as buckwheat and rhubarb. Translating to “sour” in french, Sorrel has an
-                    intense lemony tang.
-                  </p>
-                </div>
-              </div>
-              <img src="../images/Kale-Scarlet.png" alt="" />
-              <p>Kale Scarlet</p>
-              <p class="harvest__time">Harvest in 15 days</p>
-              <div class="product__card__buy">
-                <p class="">€6,99</p>
-                <button class="btn">Add to cart</button>
-              </div>
-            </div>
-
-            <div class="product__card">
-              <div class="detail-tag">
-                Details
-                <div class="details__popup">
-                  <div class="close-icon">
-                    <img src="../images/close-icon.svg" alt="" />
-                  </div>
-                  <div>
-                    <p>Green Sorrel</p>
-                    <p class="subname">Rumex acetosa</p>
-                  </div>
-                  <ul>
-                    <li>
-                      <div><img src="../images/flower.svg" alt="" /></div>
-                      <div>
-                        <p>Germination Time</p>
-                        <p>4 Days</p>
-                      </div>
-                    </li>
-                    <li>
-                      <div><img src="../images/flower-2.svg" alt="" /></div>
-                      <div>
-                        <p>Harvest Time</p>
-                        <p>26 Days</p>
-                      </div>
-                    </li>
-                  </ul>
-                  <p>
-                    Small, edible green plant from the Polygonaceae family, same as buckwheat and rhubarb. Translating to “sour” in french, Sorrel has an
-                    intense lemony tang.
-                  </p>
-                </div>
-              </div>
-              <img src="../images/Kale-Scarlet.png" alt="" />
-              <p>Frisee</p>
-              <p class="harvest__time">Harvest in 17 days</p>
-              <div class="product__card__buy">
-                <p class="">€6,99</p>
-                <button class="btn">Add to cart</button>
-              </div>
-            </div>
-          </div>
-          <div class="products__footer">
-            <div class="filter__results">Results: 1-9 of 48</div>
-            <div class="pagination__btns">
-              <a class="icon-prev disabled">
-                <img src="../images/arrow-prev.svg" alt="" />
-              </a>
-              <a href="#" class="active">1</a>
-              <a href="#">2</a>
-              <a href="#">3</a>
-              <a href="#">4</a>
-              <a class="icon-next">
-                <img src="../images/arrow-next.svg" alt="" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="footer__banner">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h2>
-                Are you ready <br />
-                to start?
-              </h2>
-            </div>
-            <div class="col">
-              <p>Explore our wide variety of over 60 different fresh produce at home, indoors.</p>
-              <a href="./shop.html" class="btn btn--secondary buy-now">Buy right now</a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="address-payment">
-          <div class="flex gap-1">
-            <div class="office__address">
-              <p class="footer_title">Our office</p>
-              <div class="address">
-                <span><img src="../images/Greece.svg" alt="" /></span>
-                <p>Greece, Egg, 190 Syngrou Avenue, 176 71, Athens</p>
-              </div>
-            </div>
-            <div class="email__address">
-              <p class="footer_title">Our e-mail</p>
-              <p>info@citycrop.io</p>
-            </div>
-          </div>
-          <div class="payment__methods">
-            <img src="../images/ApplePay.svg" alt="" width="60" height="40" />
-            <img src="../images/GooglePay.svg" alt="" width="60" height="40" />
-            <img src="../images/Mastercard-Full.svg" alt="" width="60" height="40" />
-            <img src="../images/Paypal.svg" alt="" width="60" height="40" />
-            <img src="../images/Stripe.svg" alt="" width="60" height="40" />
-            <img src="../images/Visa-Classic.svg" alt="" width="60" height="40" />
-            <img src="../images/Amex.svg" alt="" width="60" height="40" />
-          </div>
-        </div>
-        <div class="footer__row--2">
-          <div class="badges">
-            <a href="#"><img src="../images/appstore-badge.svg" alt="" /></a>
-            <a href="#"><img src="../images/google-store-badge.svg" alt="" /></a>
-          </div>
-          <div><img src="../images/cont.jpg" alt="" /></div>
-          <div>
-            <form class="footer__form">
-              <div class="input__wrapper">
-                <input name="Email" type="email" id="f-email" class="form__input" autocomplete="off" placeholder=" " />
-                <label for="f-email" class="form__label">Email address</label>
-              </div>
-
-              <button type="submit" class="btn">Subscribe</button>
-            </form>
-          </div>
-        </div>
-        <div class="footer__row--end">
-          <div class="links">
-            <a href="#">Privacy Policy</a><span>|</span><a href="#">Terms and Conditions</a><span>|</span><a href="#">Terms of Service</a>
-          </div>
-          <div><p>© 2021 CityCrop. All rights reserved</p></div>
-          <div>
-            <ul class="social-nav">
-              <li>
-                <a href="#" target="_blank" title="Facebook" rel="nofollow"><img src="../images/facebook.svg" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" target="_blank" title="Twitter" rel="nofollow"><img src="../images/twitter.svg" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" target="_blank" title="Youtube" rel="nofollow"><img src="../images/youtube.svg" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" target="_blank" title="Linkedin" rel="nofollow"><img src="../images/linkedin.svg" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" target="_blank" title="Instagram" rel="nofollow"><img src="../images/instagram.svg" alt="" /></a>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script src="../js/main.js"></script>
-    <script>
-      //dropdown script
-      const dropbtns = document.querySelectorAll('.dropbtn');
-      dropbtns.forEach((dropbtn) => {
-        dropbtn.addEventListener('click', (event) => {
-          dropbtn.classList.toggle('open');
+  <script src="../js/main.js"></script>
+  <script>
+    //dropdown script
+    const dropbtns = document.querySelectorAll('.dropbtn');
+    dropbtns.forEach((dropbtn) => {
+      dropbtn.addEventListener('click', (event) => {
+        dropbtn.classList.toggle('open');
 
-          dropbtns.forEach((dropbtn) => {
-            if (dropbtn !== event.target) {
-              dropbtn.classList.remove('open');
-            }
-          });
-        });
-      });
-
-      window.onclick = function (event) {
-        if (event.target !== document.querySelector('.dropbtn.open')) {
-          if (document.querySelector('.dropbtn.open')) {
-            document.querySelector('.dropbtn.open').classList.remove('open');
+        dropbtns.forEach((dropbtn) => {
+          if (dropbtn !== event.target) {
+            dropbtn.classList.remove('open');
           }
-        }
-      };
-
-      const filterBtn = document.querySelector('.filter-mobile');
-      filterBtn.addEventListener('click', (event) => {
-        event.target.classList.toggle('open');
-        document.body.classList.toggle('hidden');
-      });
-
-      const detailTags = document.querySelectorAll('.detail-tag');
-      detailTags.forEach((detailTag) =>
-        detailTag.addEventListener('click', (event) => {
-          event.target.classList.toggle('open');
-        })
-      );
-
-      const closeBtns = document.querySelectorAll('.close-icon');
-      closeBtns.forEach((closeBtn) => {
-        closeBtn.addEventListener('click', (event) => {
-          event.target.parentElement.parentElement.parentElement.classList.toggle('open');
         });
       });
-    </script>
-  </body>
+    });
+
+    window.onclick = function (event) {
+      if (event.target !== document.querySelector('.dropbtn.open')) {
+        if (document.querySelector('.dropbtn.open')) {
+          document.querySelector('.dropbtn.open').classList.remove('open');
+        }
+      }
+    };
+
+    const filterBtn = document.querySelector('.filter-mobile');
+    filterBtn.addEventListener('click', (event) => {
+      event.target.classList.toggle('open');
+      document.body.classList.toggle('hidden');
+    });
+
+    const detailTags = document.querySelectorAll('.detail-tag');
+    detailTags.forEach((detailTag) =>
+      detailTag.addEventListener('click', (event) => {
+        event.target.classList.toggle('open');
+      })
+    );
+
+    const closeBtns = document.querySelectorAll('.close-icon');
+    closeBtns.forEach((closeBtn) => {
+      closeBtn.addEventListener('click', (event) => {
+        event.target.parentElement.parentElement.parentElement.classList.toggle('open');
+      });
+    });
+  </script>
+</body>
+
 </html>

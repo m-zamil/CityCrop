@@ -106,7 +106,7 @@ h4 {
 .experience img {
   max-width: 500px;
 }
-.experience h2 div {
+.br-mb {
   display: none;
 }
 
@@ -174,7 +174,7 @@ h4 {
     text-align: center;
     gap: 2rem;
   }
-  .experience h2 div {
+  .br-mb {
     display: block;
   }
 }

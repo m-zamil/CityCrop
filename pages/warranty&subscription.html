@@ -1,294 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Warranty and Subscription | CityCrop</title>
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 
-    <!-- Stylesheets-->
-    <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/warrant&subscription.css" />
-  </head>
-  <body>
-    <header class="header">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Warranty and Subscription | CityCrop</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets-->
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/warrant&subscription.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <nav class="navbar">
+        <a href="/" class="nav-logo"><img src="../images/logo.svg" height="42" width="199" alt="City Crop logo"></a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="/" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">How it works</a>
+          </li>
+          <li class="nav-item">
+            <a href="./faq.html" class="nav-link">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a href="./plants-showroom.html" class="nav-link active">Plant Showroom</a>
+          </li>
+          <li class="nav-item">
+            <a href="./about.html" class="nav-link">About us</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <a href="./shop.html" class="btn shopping__button">
+          <span><img src="../images/cart.svg" alt="" width="24" height="21"></span>
+          <span>Shop</span>
+        </a>
+        <a href="./shop.html" class="shop-btn--mobile"><img src="../images/buy.svg" alt=""></a>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="warranty">
       <div class="container">
-        <nav class="navbar">
-          <a href="/" class="nav-logo"><img src="../images/logo.svg" height="42" width="199" alt="City Crop logo" /></a>
-          <ul class="nav-menu">
-            <li class="nav-item">
-              <a href="/" class="nav-link">Home</a>
+        <p class="section__label">Warranty</p>
+        <div>
+          <h2 class="headline">We’ve got you covered​</h2>
+          <div class="warranty__cards">
+            <div class="warranty__card">
+              <h3 class="warranty__title">Standard Warranty</h3>
+              <ul>
+                <li>+2 extra year</li>
+              </ul>
+              <p>€0</p>
+            </div>
+            <div class="warranty__card active">
+              <h3 class="warranty__title">Extended Warranty 1</h3>
+              <ul>
+                <li>+1 extra year</li>
+                <li>+300 extra harvests of coverage</li>
+              </ul>
+              <p>€149</p>
+            </div>
+            <div class="warranty__card">
+              <h3 class="warranty__title">Extended Warranty 2</h3>
+              <ul>
+                <li>+2 extra year</li>
+                <li>+550 extra harvests of coverage</li>
+              </ul>
+              <p>€199</p>
+            </div>
+          </div>
+          <p class="warranty__note">
+            Note: Each purchase of extended warranty will apply to one CityCrop Device – for orders of more than one
+            machine, multiple quantities of extended
+            warranty can be purchased.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="subscription">
+      <div class="container">
+        <p class="section__label">Subscription</p>
+        <div>
+          <h2 class="headline">Choose your subscription plan</h2>
+          <p class="subhead">
+            We choose the best seeds and nutrients and sending them straight to your door every month. Also, you can buy
+            separately whenever you want.
+          </p>
+        </div>
+        <div class="subs__cards">
+          <div class="subs__card">
+            <p class="subs__price">FREE</p>
+            <p class="subs__title">
+              No subscription <span><img src="../images/plan-i.svg" alt=""></span>
+            </p>
+            <div class="modal">
+              <div class="modal-content container">
+                <span class="close"><img src="../images/close-icon-b.svg" alt=""></span>
+                <h2>No subscription</h2>
+                <p>
+                  You will receive an email with your shipping information, including your tracking ID, as soon as any
+                  part of your order is shipped. We
+                  appreciate your patience as we work to get your order delivered to you as quickly as possible.
+                </p>
+                <button class="btn btn--outline">Choose free plan</button>
+              </div>
+            </div>
+            <button class="btn subs__btn btn--outline">Choose free plan</button>
+          </div>
+          <div class="subs__card">
+            <p class="subs__price"><span class="price">€21</span><span>/month</span></p>
+            <p class="subs__title">
+              Monthly <span><img src="../images/plan-i.svg" alt=""></span>
+            </p>
+            <div class="modal">
+              <div class="modal-content container">
+                <span class="close"><img src="../images/close-icon-b.svg" alt=""></span>
+                <h2>CityCrop One Montly</h2>
+                <p>
+                  You will receive an email with your shipping information, including your tracking ID, as soon as any
+                  part of your order is shipped. We
+                  appreciate your patience as we work to get your order delivered to you as quickly as possible.
+                </p>
+                <button class="btn btn--outline">Choose monthly plan</button>
+              </div>
+            </div>
+            <p class="subs__saving">You can save <b>€5</b> with this plan</p>
+            <button class="btn subs__btn btn--outline">Choose plan</button>
+          </div>
+          <div class="subs__card">
+            <p class="subs__price"><span class="price">€19</span><span>/month</span></p>
+            <p class="subs__title">
+              Six months <span><img src="../images/plan-i.svg" alt=""></span>
+            </p>
+            <div class="modal">
+              <div class="modal-content container">
+                <span class="close"><img src="../images/close-icon-b.svg" alt=""></span>
+                <h2>CityCrop Six months</h2>
+                <p>
+                  You will receive an email with your shipping information, including your tracking ID, as soon as any
+                  part of your order is shipped. We
+                  appreciate your patience as we work to get your order delivered to you as quickly as possible.
+                </p>
+                <button class="btn btn--outline">Choose monthly plan</button>
+              </div>
+            </div>
+            <p class="subs__saving">You can save <b>€11</b> with this plan</p>
+            <button class="btn subs__btn btn--outline">Choose plan</button>
+          </div>
+          <div class="subs__card">
+            <p class="subs__price"><span class="price">€17</span><span>/month</span></p>
+            <p class="subs__title">
+              Yearly <span><img src="../images/plan-i.svg" alt=""></span>
+            </p>
+            <div class="modal">
+              <div class="modal-content container">
+                <span class="close"><img src="../images/close-icon-b.svg" alt=""></span>
+                <h2>CityCrop yearly</h2>
+                <p>
+                  You will receive an email with your shipping information, including your tracking ID, as soon as any
+                  part of your order is shipped. We
+                  appreciate your patience as we work to get your order delivered to you as quickly as possible.
+                </p>
+                <button class="btn btn--outline">Choose monthly plan</button>
+              </div>
+            </div>
+            <p class="subs__saving">You can save <b>€15</b> with this plan</p>
+            <button class="btn subs__btn btn--outline">Choose plan</button>
+          </div>
+        </div>
+        <div class="cart__btn"><a href="./cart.html" class="btn">Go to cart</a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="address-payment">
+        <div class="flex gap-1">
+          <div class="office__address">
+            <p class="footer_title">Our office</p>
+            <div class="address">
+              <span><img src="../images/Greece.svg" alt=""></span>
+              <p>Greece, Egg, 190 Syngrou Avenue, 176 71, Athens</p>
+            </div>
+          </div>
+          <div class="email__address">
+            <p class="footer_title">Our e-mail</p>
+            <p>info@citycrop.io</p>
+          </div>
+        </div>
+        <div class="payment__methods">
+          <img src="../images/ApplePay.svg" alt="" width="60" height="40">
+          <img src="../images/GooglePay.svg" alt="" width="60" height="40">
+          <img src="../images/Mastercard-Full.svg" alt="" width="60" height="40">
+          <img src="../images/Paypal.svg" alt="" width="60" height="40">
+          <img src="../images/Stripe.svg" alt="" width="60" height="40">
+          <img src="../images/Visa-Classic.svg" alt="" width="60" height="40">
+          <img src="../images/Amex.svg" alt="" width="60" height="40">
+        </div>
+      </div>
+      <div class="footer__row--2">
+        <div class="badges">
+          <a href="#"><img src="../images/appstore-badge.svg" alt=""></a>
+          <a href="#"><img src="../images/google-store-badge.svg" alt=""></a>
+        </div>
+        <div><img src="../images/cont.jpg" alt=""></div>
+        <div>
+          <form class="footer__form">
+            <div class="input__wrapper">
+              <input name="Email" type="email" id="f-email" class="form__input" autocomplete="off" placeholder=" ">
+              <label for="f-email" class="form__label">Email address</label>
+            </div>
+
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer__row--end">
+        <div class="links">
+          <a href="#">Privacy Policy</a><span>|</span><a href="#">Terms and Conditions</a><span>|</span><a
+            href="#">Terms of Service</a>
+        </div>
+        <div>
+          <p>© 2021 CityCrop. All rights reserved</p>
+        </div>
+        <div>
+          <ul class="social-nav">
+            <li>
+              <a href="#" target="_blank" title="Facebook" rel="nofollow"><img src="../images/facebook.svg" alt=""></a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">How it works</a>
+            <li>
+              <a href="#" target="_blank" title="Twitter" rel="nofollow"><img src="../images/twitter.svg" alt=""></a>
             </li>
-            <li class="nav-item">
-              <a href="./faq.html" class="nav-link">FAQ</a>
+            <li>
+              <a href="#" target="_blank" title="Youtube" rel="nofollow"><img src="../images/youtube.svg" alt=""></a>
             </li>
-            <li class="nav-item">
-              <a href="./plants-showroom.html" class="nav-link active">Plant Showroom</a>
+            <li>
+              <a href="#" target="_blank" title="Linkedin" rel="nofollow"><img src="../images/linkedin.svg" alt=""></a>
             </li>
-            <li class="nav-item">
-              <a href="./about.html" class="nav-link">About us</a>
-            </li>
-            <li class="nav-item">
-              <a href="./contact.html" class="nav-link">Contact</a>
+            <li>
+              <a href="#" target="_blank" title="Instagram" rel="nofollow"><img src="../images/instagram.svg"
+                  alt=""></a>
             </li>
           </ul>
-          <a href="./shop.html" class="btn shopping__button">
-            <span><img src="../images/cart.svg" alt="" width="24" height="21" /></span>
-            <span>Shop</span>
-          </a>
-          <a href="./shop.html" class="shop-btn--mobile"><img src="../images/buy.svg" alt="" /></a>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <main>
-      <section class="warranty">
-        <div class="container">
-          <p class="section__label">Warranty</p>
-          <div>
-            <h2 class="headline">We’ve got you covered​</h2>
-            <div class="warranty__cards">
-              <div class="warranty__card">
-                <h3 class="warranty__title">Standard Warranty</h3>
-                <ul>
-                  <li>+2 extra year</li>
-                </ul>
-                <p>€0</p>
-              </div>
-              <div class="warranty__card active">
-                <h3 class="warranty__title">Extended Warranty 1</h3>
-                <ul>
-                  <li>+1 extra year</li>
-                  <li>+300 extra harvests of coverage</li>
-                </ul>
-                <p>€149</p>
-              </div>
-              <div class="warranty__card">
-                <h3 class="warranty__title">Extended Warranty 2</h3>
-                <ul>
-                  <li>+2 extra year</li>
-                  <li>+550 extra harvests of coverage</li>
-                </ul>
-                <p>€199</p>
-              </div>
-            </div>
-            <p class="warranty__note">
-              Note: Each purchase of extended warranty will apply to one CityCrop Device – for orders of more than one machine, multiple quantities of extended
-              warranty can be purchased.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section class="subscription">
-        <div class="container">
-          <p class="section__label">Subscription</p>
-          <div>
-            <h2 class="headline">Choose your subscription plan</h2>
-            <p class="subhead">
-              We choose the best seeds and nutrients and sending them straight to your door every month. Also, you can buy separately whenever you want.
-            </p>
-          </div>
-          <div class="subs__cards">
-            <div class="subs__card">
-              <p class="subs__price">FREE</p>
-              <p class="subs__title">
-                No subscription <span><img src="../images/plan-i.svg" alt="" /></span>
-              </p>
-              <div class="modal">
-                <div class="modal-content container">
-                  <span class="close"><img src="../images/close-icon-b.svg" alt="" /></span>
-                  <h2>No subscription</h2>
-                  <p>
-                    You will receive an email with your shipping information, including your tracking ID, as soon as any part of your order is shipped. We
-                    appreciate your patience as we work to get your order delivered to you as quickly as possible.
-                  </p>
-                  <button class="btn btn--outline">Choose free plan</button>
-                </div>
-              </div>
-              <button class="btn subs__btn btn--outline">Choose free plan</button>
-            </div>
-            <div class="subs__card">
-              <p class="subs__price"><span class="price">€21</span><span>/month</span></p>
-              <p class="subs__title">
-                Monthly <span><img src="../images/plan-i.svg" alt="" /></span>
-              </p>
-              <div class="modal">
-                <div class="modal-content container">
-                  <span class="close"><img src="../images/close-icon-b.svg" alt="" /></span>
-                  <h2>CityCrop One Montly</h2>
-                  <p>
-                    You will receive an email with your shipping information, including your tracking ID, as soon as any part of your order is shipped. We
-                    appreciate your patience as we work to get your order delivered to you as quickly as possible.
-                  </p>
-                  <button class="btn btn--outline">Choose monthly plan</button>
-                </div>
-              </div>
-              <p class="subs__saving">You can save <b>€5</b> with this plan</p>
-              <button class="btn subs__btn btn--outline">Choose plan</button>
-            </div>
-            <div class="subs__card">
-              <p class="subs__price"><span class="price">€19</span><span>/month</span></p>
-              <p class="subs__title">
-                Six months <span><img src="../images/plan-i.svg" alt="" /></span>
-              </p>
-              <div class="modal">
-                <div class="modal-content container">
-                  <span class="close"><img src="../images/close-icon-b.svg" alt="" /></span>
-                  <h2>CityCrop Six months</h2>
-                  <p>
-                    You will receive an email with your shipping information, including your tracking ID, as soon as any part of your order is shipped. We
-                    appreciate your patience as we work to get your order delivered to you as quickly as possible.
-                  </p>
-                  <button class="btn btn--outline">Choose monthly plan</button>
-                </div>
-              </div>
-              <p class="subs__saving">You can save <b>€11</b> with this plan</p>
-              <button class="btn subs__btn btn--outline">Choose plan</button>
-            </div>
-            <div class="subs__card">
-              <p class="subs__price"><span class="price">€17</span><span>/month</span></p>
-              <p class="subs__title">
-                Yearly <span><img src="../images/plan-i.svg" alt="" /></span>
-              </p>
-              <div class="modal">
-                <div class="modal-content container">
-                  <span class="close"><img src="../images/close-icon-b.svg" alt="" /></span>
-                  <h2>CityCrop yearly</h2>
-                  <p>
-                    You will receive an email with your shipping information, including your tracking ID, as soon as any part of your order is shipped. We
-                    appreciate your patience as we work to get your order delivered to you as quickly as possible.
-                  </p>
-                  <button class="btn btn--outline">Choose monthly plan</button>
-                </div>
-              </div>
-              <p class="subs__saving">You can save <b>€15</b> with this plan</p>
-              <button class="btn subs__btn btn--outline">Choose plan</button>
-            </div>
-          </div>
-          <div class="cart__btn"><a href="./cart.html" class="btn">Go to cart</a></div>
-        </div>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="container">
-        <div class="address-payment">
-          <div class="flex gap-1">
-            <div class="office__address">
-              <p class="footer_title">Our office</p>
-              <div class="address">
-                <span><img src="../images/Greece.svg" alt="" /></span>
-                <p>Greece, Egg, 190 Syngrou Avenue, 176 71, Athens</p>
-              </div>
-            </div>
-            <div class="email__address">
-              <p class="footer_title">Our e-mail</p>
-              <p>info@citycrop.io</p>
-            </div>
-          </div>
-          <div class="payment__methods">
-            <img src="../images/ApplePay.svg" alt="" width="60" height="40" />
-            <img src="../images/GooglePay.svg" alt="" width="60" height="40" />
-            <img src="../images/Mastercard-Full.svg" alt="" width="60" height="40" />
-            <img src="../images/Paypal.svg" alt="" width="60" height="40" />
-            <img src="../images/Stripe.svg" alt="" width="60" height="40" />
-            <img src="../images/Visa-Classic.svg" alt="" width="60" height="40" />
-            <img src="../images/Amex.svg" alt="" width="60" height="40" />
-          </div>
-        </div>
-        <div class="footer__row--2">
-          <div class="badges">
-            <a href="#"><img src="../images/appstore-badge.svg" alt="" /></a>
-            <a href="#"><img src="../images/google-store-badge.svg" alt="" /></a>
-          </div>
-          <div><img src="../images/cont.jpg" alt="" /></div>
-          <div>
-            <form class="footer__form">
-              <div class="input__wrapper">
-                <input name="Email" type="email" id="f-email" class="form__input" autocomplete="off" placeholder=" " />
-                <label for="f-email" class="form__label">Email address</label>
-              </div>
-
-              <button type="submit" class="btn">Subscribe</button>
-            </form>
-          </div>
-        </div>
-        <div class="footer__row--end">
-          <div class="links">
-            <a href="#">Privacy Policy</a><span>|</span><a href="#">Terms and Conditions</a><span>|</span><a href="#">Terms of Service</a>
-          </div>
-          <div><p>© 2021 CityCrop. All rights reserved</p></div>
-          <div>
-            <ul class="social-nav">
-              <li>
-                <a href="#" target="_blank" title="Facebook" rel="nofollow"><img src="../images/facebook.svg" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" target="_blank" title="Twitter" rel="nofollow"><img src="../images/twitter.svg" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" target="_blank" title="Youtube" rel="nofollow"><img src="../images/youtube.svg" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" target="_blank" title="Linkedin" rel="nofollow"><img src="../images/linkedin.svg" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" target="_blank" title="Instagram" rel="nofollow"><img src="../images/instagram.svg" alt="" /></a>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <script src="../js/main.js"></script>
-    <script>
-      const warrantyCards = document.querySelectorAll('.warranty__card');
-      const subsCards = document.querySelectorAll('.subs__btn');
-      const closeBtns = document.querySelectorAll('.close');
-      warrantyCards.forEach((plan) => {
-        plan.addEventListener('click', () => {
-          if (document.querySelector('.warranty__card.active')) {
-            document.querySelector('.warranty__card.active').classList.remove('active');
-          }
-          plan.classList.toggle('active');
-        });
-      });
-      subsCards.forEach((subplan) => {
-        subplan.addEventListener('click', () => {
-          if (document.querySelector('.subs__card.active')) {
-            document.querySelector('.subs__card.active').classList.remove('active');
-          }
-          subplan.parentElement.classList.toggle('active');
-        });
-      });
-      let modalBtns = document.querySelectorAll('.subs__title span');
-      let modals = document.querySelectorAll('.modals');
-      modalBtns.forEach((modalBtn) => {
-        modalBtn.addEventListener('click', () => {
-          modalBtn.parentElement.nextElementSibling.style.display = 'flex';
-        });
-      });
-      closeBtns.forEach((close) => {
-        close.addEventListener('click', () => {
-          close.parentElement.parentElement.style.display = 'none';
-        });
-      });
-      window.onclick = function (event) {
-        if (event.target.classList.contains('modal')) {
-          event.target.style.display = 'none';
+  <script src="../js/main.js"></script>
+  <script>
+    const warrantyCards = document.querySelectorAll('.warranty__card');
+    const subsCards = document.querySelectorAll('.subs__btn');
+    const closeBtns = document.querySelectorAll('.close');
+    warrantyCards.forEach((plan) => {
+      plan.addEventListener('click', () => {
+        if (document.querySelector('.warranty__card.active')) {
+          document.querySelector('.warranty__card.active').classList.remove('active');
         }
-      };
-    </script>
-  </body>
+        plan.classList.toggle('active');
+      });
+    });
+    subsCards.forEach((subplan) => {
+      subplan.addEventListener('click', () => {
+        if (document.querySelector('.subs__card.active')) {
+          document.querySelector('.subs__card.active').classList.remove('active');
+        }
+        subplan.parentElement.classList.toggle('active');
+      });
+    });
+    let modalBtns = document.querySelectorAll('.subs__title span');
+    let modals = document.querySelectorAll('.modals');
+    modalBtns.forEach((modalBtn) => {
+      modalBtn.addEventListener('click', () => {
+        modalBtn.parentElement.nextElementSibling.style.display = 'flex';
+      });
+    });
+    closeBtns.forEach((close) => {
+      close.addEventListener('click', () => {
+        close.parentElement.parentElement.style.display = 'none';
+      });
+    });
+    window.onclick = function (event) {
+      if (event.target.classList.contains('modal')) {
+        event.target.style.display = 'none';
+      }
+    };
+  </script>
+</body>
+
 </html>
