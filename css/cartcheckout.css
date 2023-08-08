@@ -18,16 +18,16 @@
   color: var(--green);
 }
 .tab__btns button::after {
-  content: url("../images/tab-active-1.svg");
+  content: url('../images/tab-active-1.svg');
   max-width: 100%;
   display: block;
   padding-top: 1rem;
 }
 .tab__btns button.active::after {
-  content: url("../images/tab-active.svg");
+  content: url('../images/tab-active.svg');
 }
 .tab__btns button:first-child:after {
-  content: url("../images/tab-active.svg");
+  content: url('../images/tab-active.svg');
 }
 
 .cart__header {
@@ -193,7 +193,7 @@
 }
 .checkout__form h2::before {
   counter-increment: formsection;
-  content: counter(formsection) ". ";
+  content: counter(formsection) '. ';
 }
 
 .checkout__form .form__input {
@@ -314,7 +314,7 @@
 .paypal__info {
   margin-bottom: 2rem;
 }
-.checkout__content .btn[type="submit"] {
+.checkout__content .btn[type='submit'] {
   padding: 12px 60px;
   margin: 2rem 0;
 }
@@ -432,7 +432,7 @@
     width: 100%;
   }
 
-  .checkout__form .btn[type="submit"] {
+  .checkout__form .btn[type='submit'] {
     width: 100%;
   }
   .cc__info input:first-child {
@@ -447,7 +447,7 @@
     font-size: 14px !important;
     margin-top: -1rem;
   }
-  .checkout__content .btn[type="submit"] {
+  .checkout__content .btn[type='submit'] {
     width: 100%;
   }
 }

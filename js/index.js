@@ -1,28 +1,28 @@
 //video script
-var overlay = document.getElementById("video-overlay"),
-  video = document.getElementById("video"),
+var overlay = document.getElementById('video-overlay'),
+  video = document.getElementById('video'),
   videoPlaying = false;
 
 function hideOverlay() {
-  overlay.style.display = "none";
+  overlay.style.display = 'none';
   videoPlaying = true;
-  video.setAttribute("controls", "");
+  video.setAttribute('controls', '');
   video.play();
 }
 
 function showOverlay() {
   if (video.readyState === 4) {
-    overlay.style.display = "flex";
-    video.removeAttribute("controls");
+    overlay.style.display = 'flex';
+    video.removeAttribute('controls');
     videoPlaying = true;
   }
 }
 
-video.addEventListener("pause", showOverlay);
-overlay.addEventListener("click", hideOverlay);
+video.addEventListener('pause', showOverlay);
+overlay.addEventListener('click', hideOverlay);
 
 $(document).ready(function () {
-  $("#hero_slider").owlCarousel({
+  $('#hero_slider').owlCarousel({
     items: 1,
     loop: true,
     autoplay: true,
@@ -32,7 +32,7 @@ $(document).ready(function () {
     nav: false,
     dots: true,
   });
-  $("#grow-slider").owlCarousel({
+  $('#grow-slider').owlCarousel({
     navText: ["<div class='nav-btn prev-slide'></div>", "<div class='nav-btn next-slide'></div>"],
     center: false,
     responsive: {
@@ -52,7 +52,7 @@ $(document).ready(function () {
     dots: true,
   });
 
-  $("#highlight_slider").owlCarousel({
+  $('#highlight_slider').owlCarousel({
     loop: false,
     margin: 20,
     dots: true,
@@ -70,7 +70,7 @@ $(document).ready(function () {
     },
   });
 
-  $("#review-slider").owlCarousel({
+  $('#review-slider').owlCarousel({
     items: 3,
     stagePadding: 50,
     center: true,
@@ -93,7 +93,7 @@ $(document).ready(function () {
     },
   });
 
-  $(".owl-carousel").owlCarousel({
+  $('.owl-carousel').owlCarousel({
     items: 1,
     loop: false,
     responsive: {

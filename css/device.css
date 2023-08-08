@@ -9,7 +9,7 @@
   margin: 1rem 0 2rem;
 }
 .breadcrumb a::before {
-  content: url("../images/arrow-back.svg");
+  content: url('../images/arrow-back.svg');
   vertical-align: middle;
 }
 
@@ -221,7 +221,7 @@
 }
 
 .specs tr::before {
-  content: "\2022";
+  content: '\2022';
   font-weight: bold;
   margin-right: 2px;
   font-size: 20px;
@@ -264,8 +264,8 @@
 }
 
 .accordion:after {
-  content: "\002B";
-  content: url("../images/arrowhead-down.svg");
+  content: '\002B';
+  content: url('../images/arrowhead-down.svg');
   color: #777;
   font-weight: bold;
   float: right;
@@ -276,8 +276,8 @@
 }
 
 .accordion.active:after {
-  content: "\2212";
-  content: url("../images/arrowhead-up.svg");
+  content: '\2212';
+  content: url('../images/arrowhead-up.svg');
   position: absolute;
   right: 0;
   top: 1.1rem;

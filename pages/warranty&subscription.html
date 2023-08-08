@@ -83,7 +83,10 @@
                 <p>€199</p>
               </div>
             </div>
-            <p class="warranty__note">Note: Each purchase of extended warranty will apply to one CityCrop Device – for orders of more than one machine, multiple quantities of extended warranty can be purchased.</p>
+            <p class="warranty__note">
+              Note: Each purchase of extended warranty will apply to one CityCrop Device – for orders of more than one machine, multiple quantities of extended
+              warranty can be purchased.
+            </p>
           </div>
         </div>
       </section>
@@ -92,7 +95,9 @@
           <p class="section__label">Subscription</p>
           <div>
             <h2 class="headline">Choose your subscription plan</h2>
-            <p class="subhead">We choose the best seeds and nutrients and sending them straight to your door every month. Also, you can buy separately whenever you want.</p>
+            <p class="subhead">
+              We choose the best seeds and nutrients and sending them straight to your door every month. Also, you can buy separately whenever you want.
+            </p>
           </div>
           <div class="subs__cards">
             <div class="subs__card">
@@ -104,7 +109,10 @@
                 <div class="modal-content container">
                   <span class="close"><img src="../images/close-icon-b.svg" alt="" /></span>
                   <h2>No subscription</h2>
-                  <p>You will receive an email with your shipping information, including your tracking ID, as soon as any part of your order is shipped. We appreciate your patience as we work to get your order delivered to you as quickly as possible.</p>
+                  <p>
+                    You will receive an email with your shipping information, including your tracking ID, as soon as any part of your order is shipped. We
+                    appreciate your patience as we work to get your order delivered to you as quickly as possible.
+                  </p>
                   <button class="btn btn--outline">Choose free plan</button>
                 </div>
               </div>
@@ -119,7 +127,10 @@
                 <div class="modal-content container">
                   <span class="close"><img src="../images/close-icon-b.svg" alt="" /></span>
                   <h2>CityCrop One Montly</h2>
-                  <p>You will receive an email with your shipping information, including your tracking ID, as soon as any part of your order is shipped. We appreciate your patience as we work to get your order delivered to you as quickly as possible.</p>
+                  <p>
+                    You will receive an email with your shipping information, including your tracking ID, as soon as any part of your order is shipped. We
+                    appreciate your patience as we work to get your order delivered to you as quickly as possible.
+                  </p>
                   <button class="btn btn--outline">Choose monthly plan</button>
                 </div>
               </div>
@@ -135,7 +146,10 @@
                 <div class="modal-content container">
                   <span class="close"><img src="../images/close-icon-b.svg" alt="" /></span>
                   <h2>CityCrop Six months</h2>
-                  <p>You will receive an email with your shipping information, including your tracking ID, as soon as any part of your order is shipped. We appreciate your patience as we work to get your order delivered to you as quickly as possible.</p>
+                  <p>
+                    You will receive an email with your shipping information, including your tracking ID, as soon as any part of your order is shipped. We
+                    appreciate your patience as we work to get your order delivered to you as quickly as possible.
+                  </p>
                   <button class="btn btn--outline">Choose monthly plan</button>
                 </div>
               </div>
@@ -151,7 +165,10 @@
                 <div class="modal-content container">
                   <span class="close"><img src="../images/close-icon-b.svg" alt="" /></span>
                   <h2>CityCrop yearly</h2>
-                  <p>You will receive an email with your shipping information, including your tracking ID, as soon as any part of your order is shipped. We appreciate your patience as we work to get your order delivered to you as quickly as possible.</p>
+                  <p>
+                    You will receive an email with your shipping information, including your tracking ID, as soon as any part of your order is shipped. We
+                    appreciate your patience as we work to get your order delivered to you as quickly as possible.
+                  </p>
                   <button class="btn btn--outline">Choose monthly plan</button>
                 </div>
               </div>
@@ -207,7 +224,9 @@
           </div>
         </div>
         <div class="footer__row--end">
-          <div class="links"><a href="#">Privacy Policy</a><span>|</span><a href="#">Terms and Conditions</a><span>|</span><a href="#">Terms of Service</a></div>
+          <div class="links">
+            <a href="#">Privacy Policy</a><span>|</span><a href="#">Terms and Conditions</a><span>|</span><a href="#">Terms of Service</a>
+          </div>
           <div><p>© 2021 CityCrop. All rights reserved</p></div>
           <div>
             <ul class="social-nav">
@@ -234,40 +253,40 @@
 
     <script src="../js/main.js"></script>
     <script>
-      const warrantyCards = document.querySelectorAll(".warranty__card");
-      const subsCards = document.querySelectorAll(".subs__btn");
-      const closeBtns = document.querySelectorAll(".close");
+      const warrantyCards = document.querySelectorAll('.warranty__card');
+      const subsCards = document.querySelectorAll('.subs__btn');
+      const closeBtns = document.querySelectorAll('.close');
       warrantyCards.forEach((plan) => {
-        plan.addEventListener("click", () => {
-          if (document.querySelector(".warranty__card.active")) {
-            document.querySelector(".warranty__card.active").classList.remove("active");
+        plan.addEventListener('click', () => {
+          if (document.querySelector('.warranty__card.active')) {
+            document.querySelector('.warranty__card.active').classList.remove('active');
           }
-          plan.classList.toggle("active");
+          plan.classList.toggle('active');
         });
       });
       subsCards.forEach((subplan) => {
-        subplan.addEventListener("click", () => {
-          if (document.querySelector(".subs__card.active")) {
-            document.querySelector(".subs__card.active").classList.remove("active");
+        subplan.addEventListener('click', () => {
+          if (document.querySelector('.subs__card.active')) {
+            document.querySelector('.subs__card.active').classList.remove('active');
           }
-          subplan.parentElement.classList.toggle("active");
+          subplan.parentElement.classList.toggle('active');
         });
       });
-      let modalBtns = document.querySelectorAll(".subs__title span");
-      let modals = document.querySelectorAll(".modals");
+      let modalBtns = document.querySelectorAll('.subs__title span');
+      let modals = document.querySelectorAll('.modals');
       modalBtns.forEach((modalBtn) => {
-        modalBtn.addEventListener("click", () => {
-          modalBtn.parentElement.nextElementSibling.style.display = "flex";
+        modalBtn.addEventListener('click', () => {
+          modalBtn.parentElement.nextElementSibling.style.display = 'flex';
         });
       });
       closeBtns.forEach((close) => {
-        close.addEventListener("click", () => {
-          close.parentElement.parentElement.style.display = "none";
+        close.addEventListener('click', () => {
+          close.parentElement.parentElement.style.display = 'none';
         });
       });
       window.onclick = function (event) {
-        if (event.target.classList.contains("modal")) {
-          event.target.style.display = "none";
+        if (event.target.classList.contains('modal')) {
+          event.target.style.display = 'none';
         }
       };
     </script>

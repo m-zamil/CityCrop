@@ -73,21 +73,33 @@
             <div id="general" class="tabcontent">
               <button class="accordion">What is CityCrop?</button>
               <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
               </div>
 
               <button class="accordion">What is the size of CityCrop?</button>
               <div class="panel">
-                <p>CityCrop One (H x W x D) 42.44cm x 47.17cm x 53.9cm | 16.7” x 18.57” x 21.22” Weight 30 kg, 66 lb CityCrop Twin (H x W x D) 84.66cm x 47.17cm x 53.9cm | 33.33” x 18.57” x 21.22” Weight 55 kg, 121 lb</p>
+                <p>
+                  CityCrop One (H x W x D) 42.44cm x 47.17cm x 53.9cm | 16.7” x 18.57” x 21.22” Weight 30 kg, 66 lb CityCrop Twin (H x W x D) 84.66cm x 47.17cm
+                  x 53.9cm | 33.33” x 18.57” x 21.22” Weight 55 kg, 121 lb
+                </p>
               </div>
 
               <button class="accordion">Do I need an internet connection?</button>
               <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
               </div>
               <button class="accordion">What kind of electrical outlet do I need?</button>
               <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
               </div>
               <button class="accordion">How much electricity does the CityCrop One and CityCrop Twin use?</button>
               <div class="panel">
@@ -134,14 +146,20 @@
             <div id="shipping" class="tabcontent">
               <button class="accordion">What is CityCrop?</button>
               <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
               </div>
             </div>
 
             <div id="warranty" class="tabcontent">
               <button class="accordion">What is CityCrop?</button>
               <div class="panel">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
               </div>
             </div>
           </div>
@@ -232,7 +250,9 @@
           </div>
         </div>
         <div class="footer__row--end">
-          <div class="links"><a href="#">Privacy Policy</a><span>|</span><a href="#">Terms and Conditions</a><span>|</span><a href="#">Terms of Service</a></div>
+          <div class="links">
+            <a href="#">Privacy Policy</a><span>|</span><a href="#">Terms and Conditions</a><span>|</span><a href="#">Terms of Service</a>
+          </div>
           <div><p>© 2021 CityCrop. All rights reserved</p></div>
           <div>
             <ul class="social-nav">
@@ -261,31 +281,31 @@
     <script>
       function openTab(evt, tabName) {
         var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
+        tabcontent = document.getElementsByClassName('tabcontent');
         for (i = 0; i < tabcontent.length; i++) {
-          tabcontent[i].style.display = "none";
+          tabcontent[i].style.display = 'none';
         }
-        tablinks = document.getElementsByClassName("tablink");
+        tablinks = document.getElementsByClassName('tablink');
         for (i = 0; i < tablinks.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" active", "");
+          tablinks[i].className = tablinks[i].className.replace(' active', '');
         }
-        document.getElementById(tabName).style.display = "block";
-        evt.currentTarget.className += " active";
+        document.getElementById(tabName).style.display = 'block';
+        evt.currentTarget.className += ' active';
       }
-      document.getElementById("defaultOpen").click();
+      document.getElementById('defaultOpen').click();
 
       //Accordion Script
-      var acc = document.getElementsByClassName("accordion");
+      var acc = document.getElementsByClassName('accordion');
       var i;
 
       for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-          this.classList.toggle("active");
+        acc[i].addEventListener('click', function () {
+          this.classList.toggle('active');
           var panel = this.nextElementSibling;
           if (panel.style.maxHeight) {
             panel.style.maxHeight = null;
           } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
+            panel.style.maxHeight = panel.scrollHeight + 'px';
           }
         });
       }

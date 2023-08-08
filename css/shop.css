@@ -61,20 +61,20 @@
 }
 
 .seed__card.card-1 {
-  background-image: url("../images/leafy-greens.jpg");
+  background-image: url('../images/leafy-greens.jpg');
 }
 
 .seed__card.card-2 {
-  background-image: url("../images/microgreens.jpg");
+  background-image: url('../images/microgreens.jpg');
 }
 .seed__card.card-3 {
-  background-image: url("../images/lettuces.jpg");
+  background-image: url('../images/lettuces.jpg');
 }
 .seed__card.card-4 {
-  background-image: url("../images/herbs.jpg");
+  background-image: url('../images/herbs.jpg');
 }
 .seed__card.card-5 {
-  background-image: url("../images/exotic.jpg");
+  background-image: url('../images/exotic.jpg');
 }
 
 .seed__card--info p {
@@ -208,11 +208,11 @@
     margin-bottom: 1.5rem;
   }
   .seed__card.card-1 {
-    background-image: url("../images/leafy-greens-d.jpg");
+    background-image: url('../images/leafy-greens-d.jpg');
   }
 
   .seed__card.card-2 {
-    background-image: url("../images/microgreens-d.jpg");
+    background-image: url('../images/microgreens-d.jpg');
   }
   .seed__card > div {
     padding: 3rem 5rem;

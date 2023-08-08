@@ -59,7 +59,7 @@
   margin-top: 0;
 }
 .blockquote::before {
-  content: url("../images/quote.png");
+  content: url('../images/quote.png');
   display: block;
   margin-bottom: 2rem;
 }

@@ -282,7 +282,9 @@
           </div>
         </div>
         <div class="footer__row--end">
-          <div class="links"><a href="#">Privacy Policy</a><span>|</span><a href="#">Terms and Conditions</a><span>|</span><a href="#">Terms of Service</a></div>
+          <div class="links">
+            <a href="#">Privacy Policy</a><span>|</span><a href="#">Terms and Conditions</a><span>|</span><a href="#">Terms of Service</a>
+          </div>
           <div><p>© 2021 CityCrop. All rights reserved</p></div>
           <div>
             <ul class="social-nav">
@@ -313,8 +315,8 @@
     <script>
       function owlInitialize() {
         if ($(window).width() < 768) {
-          $("#card-neutrients").addClass("owl-carousel");
-          $(".owl-carousel").owlCarousel({
+          $('#card-neutrients').addClass('owl-carousel');
+          $('.owl-carousel').owlCarousel({
             loop: false,
             margin: 20,
             stagePadding: 65,
@@ -330,8 +332,8 @@
             },
           });
         } else {
-          $(".owl-carousel").owlCarousel("destroy");
-          $("#card-neutrients").removeClass("owl-carousel");
+          $('.owl-carousel').owlCarousel('destroy');
+          $('#card-neutrients').removeClass('owl-carousel');
         }
       }
       $(document).ready(function (e) {

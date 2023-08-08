@@ -5,7 +5,7 @@
   margin: 1rem 0 2rem;
 }
 .breadcrumb a::before {
-  content: url("../images/arrow-back.svg");
+  content: url('../images/arrow-back.svg');
   vertical-align: middle;
 }
 
